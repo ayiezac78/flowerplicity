@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="images/flowerplicity-website-favicon-white.png" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../images/flowerplicity-website-favicon-white.png" type="image/png" sizes="16x16">
   <title>Flowerplicity</title>
-  <script src="js/bootstrap.bundle.js"></script>
+  <script src="../js/bootstrap.bundle.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm fixed-top">
@@ -16,16 +16,16 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="../index.html">
           <p><h3><span id="boldText">Flower</span>plicity</h3></p>
         </a>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul id="navMenus" class="navbar-nav mx-auto mx-md-auto mx-sm-auto mb-2 mb-md-2 mb-sm-2 mb-lg-0 mb-md-0 mb-sm-0 justify-content-center col">
               <li class="nav-item">
-                <a class="nav-link active navMenuLink" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active navMenuLink" aria-current="page" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navMenuLink" href="pages/flowers.html">Flowers</a>
+                <a class="nav-link navMenuLink" href="../pages/flowers.html">Flowers</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link navMenuLink" href="#">Gift Ideas</a>
@@ -48,12 +48,12 @@
 </button> -->
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-icons" href="#">
+                <a class="nav-link nav-icons" href="404.html">
                   <i class="far fa-heart"><span class="badge rounded-circle translate-middle">2</span></i>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-icons" href="#">
+                <a class="nav-link nav-icons" href="404.html">
                   <i class="fa fa-shopping-cart"><span class="badge rounded-circle translate-middle">5</span></i>
                 </a>
               </li>
@@ -78,7 +78,7 @@
           <div class="modal-body">
             <div class="input-group mb-3">
               <input type="text" class="form-control border-success border-opacity-25" placeholder="I am looking for a  flower shop near me..." aria-label="Search Flowershop Nearby" aria-describedby="button-addon2">
-              <a href="#" class="btn btn-outline-success" type="button" id="button-addon2"><i class="fas fa-search"></i></a>
+              <a href="404.html" class="btn btn-outline-success" type="button" id="button-addon2"><i class="fas fa-search"></i></a>
             </div>
           </div>
           <!-- <div class="modal-footer">
@@ -93,9 +93,15 @@
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Welcome to <b>Flower</b>plicity</h1>
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Sign in to <b>Flower</b>plicity</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
+          <p class="ps-3 mt-2">
+            Sign in with:
+            <a href="#"><i class="fab fa-facebook-f ps-2"></i></a>
+            <a href="#"><i class="fab fa-google text-danger ps-2"></i></a>
+            <a href="#"><i class="fab fa-instagram ps-2 text-black"></i></a>
+          </p>
           <div class="modal-body">
             <!-- Show a second modal and hide this one with the button below. -->
             <form>
@@ -108,7 +114,7 @@
                   <input class="input" placeholder="Password" required="" type="password">
                   <span class="input-border"></span>
                 </div>
-                <div class="row mt-4">
+                <div class="row mt-2">
                   <div class="col d-flex justify-content-start">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="" id="flexCheckCheck" checked>
@@ -123,17 +129,14 @@
                   </div>
                 </div>
               </div>
-              <a href="pages/user.html" class="btn-sm btn btn-success mt-2 ">SIGN IN</a>
+              <button class="btn-sm btn btn-success mt-2 ">SIGN IN</button>
             </form>
           </div>
           <div class="modal-footer justify-content-between">
             <div class="row">
               <div class="col">
-                <p id="sign-options" class="m-auto">
-                  Sign in or sign up with:
-                  <a href="#"><i class="fab fa-facebook-f ps-2"></i></a>
-                  <a href="#"><i class="fab fa-google text-danger ps-2"></i></a>
-                  <a href="#"><i class="fab fa-twitter ps-2 text-primary"></i></a>
+                <p>Don't have an account?
+                  <a class="link-primary" href="#" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Sign up here</a>
                 </p>
               </div>
               <!-- <div id="regQ-txt" class="col">
@@ -142,6 +145,62 @@
                 </p>
               </div> -->
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Sign up to <b>Flower</b>plicity</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="form col-md-6">
+                  <input class="input" placeholder="User Name" required="" type="text">
+                  <span class="input-border"></span>
+                </div>
+                <div class="form col-12">
+                  <input id="shopName-txt" class="input" placeholder="(OPTIONAL) Business Name" type="text">
+                  <span class="input-border"></span>
+                </div>
+                <div>
+                  <a tabindex="0" href="#"><i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip" data-bs-title="This applies to those who have a flower shop or local flower grower wants to post their floral products." class="far fa-question-circle"></i></a>
+                </div>
+                <div class="form col-md-6">
+                  <input class="input" placeholder="Email address" required="" type="email">
+                  <span class="input-border"></span>
+                </div>
+                <div class="form col-md-6">
+                  <input class="input" placeholder="Password" required="" type="password">
+                  <span class="input-border"></span>
+                </div>
+                <div class="form col-md-6">
+                  <input class="input" placeholder="Confirm Password" required="" type="password">
+                  <span class="input-border"></span>
+                </div>
+              </div>
+              <div class="form-check pt-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckCheck" checked>
+                <label class="form-check-label" for="flexCheckDefault">
+                  I have read and agree to the terms
+                </label>
+              </div>
+              <button class="btn-register mt-3 float-end">REGISTER</button>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <div id="signup-links" class="">
+              Sign up using:
+              <a href="#"><i class="fab fa-facebook-f ps-2"></i></a>
+              <a href="#"><i class="fab fa-google text-danger ps-2"></i></a>
+              <a href="#"><i class="fab fa-instagram ps-2 text-black"></i></a>
+            </div>
+
+            <a href="#" class="link-info float-start" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to Log in</a>
           </div>
         </div>
       </div>
