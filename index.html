@@ -25,7 +25,7 @@
                 <a class="nav-link active navMenuLink" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navMenuLink" href="pages/flowers.html">Flowers</a>
+                <a class="nav-link navMenuLink" href="./pages/flowers.html">Flowers</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link navMenuLink" href="#">Gift Ideas</a>
@@ -39,22 +39,97 @@
             </ul>
             <ul id="rightNav" class="navbar-nav ms-auto ms-md-auto ms-sm-auto mb-2 mb-md-2 mb-sm-2 mb-lg-0 mb-md-0 mb-sm-0">
               <li class="nav-item">
-                <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav-link nav-icons" href="#">
+                <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav-link nav-icons" href="#search">
                   <i class="fas fa-search"></i>
                 </a>
-                <!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button> -->
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-icons" href="#">
+                <a data-bs-toggle="popover" data-bs-custom-class="custom-popover" data-bs-html="true" data-bs-title="My Wishlist" data-bs-trigger="focus" data-bs-content="
+                  <div class='row'>
+                    <a class='col' href='#'>
+                      <img src='images/bs1.jpg'/class='img-fluid w-100 h-100 col'>
+                    </a>
+                      <p class='col'>
+                        &#8369 1000.00
+                        &#8369<s>2000.00</s> 
+                      </p>
+                      <p class='col'>
+                        In Stock
+                      </p>
+                      <p class='col'>
+                        <a class='text-black' href='#'>ADD TO CART</a>
+                      </p>
+                  </div>
+                  <div class='row my-1'>
+                    <a class='col' href='#'>
+                      <img src='images/bs4.jpg'/class='img-fluid w-100 h-100 col'>
+                    </a>
+                      <p class='col'>
+                        &#8369 1500.00
+                        &#8369<s>1800.00</s> 
+                      </p>
+                      <p class='col'>
+                        In Stock
+                      </p>
+                      <p class='col'>
+                        <a class='text-black' href='#'>ADD TO CART</a>
+                      </p>
+                  </div>
+                  "
+                class="nav-link nav-icons" href="#wishlist">
                   <i class="far fa-heart"><span class="badge rounded-circle translate-middle">2</span></i>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-icons" href="#">
-                  <i class="fa fa-shopping-cart"><span class="badge rounded-circle translate-middle">5</span></i>
+                <a data-bs-toggle="popover" data-bs-custom-class="custom-popover" data-bs-html="true" data-bs-title="My Shopping Cart" data-bs-trigger="focus" data-bs-content="
+                <div class='row'>
+                  <a class='col' href='#'>
+                    <img src='images/bs1.jpg'/class='img-fluid w-100 h-100 col'>
+                  </a>
+                    <p class='col'>
+                      &#8369 1000.00
+                      &#8369<s>2000.00</s> 
+                    </p>
+                    <p class='col'>
+                      In Stock
+                    </p>
+                    <p class='col'>
+                      <a class='text-black' href='#'>ADD TO CART</a>
+                    </p>
+                </div>
+                <div class='row my-1'>
+                  <a class='col' href='#'>
+                    <img src='images/bs4.jpg'/class='img-fluid w-100 h-100 col'>
+                  </a>
+                    <p class='col'>
+                      &#8369 1500.00
+                      &#8369<s>1800.00</s> 
+                    </p>
+                    <p class='col'>
+                      In Stock
+                    </p>
+                    <p class='col'>
+                      <a class='text-black' href='#'>ADD TO CART</a>
+                    </p>
+                </div>
+                <div class='row my-1'>
+                  <a class='col' href='#'>
+                    <img src='images/bs5.jpg'/class='img-fluid w-100 h-100 col'>
+                  </a>
+                    <p class='col'>
+                      &#8369 900.00
+                      &#8369<s>1000.00</s> 
+                    </p>
+                    <p class='col'>
+                      In Stock
+                    </p>
+                    <p class='col'>
+                      <a class='text-black' href='#'>ADD TO CART</a>
+                    </p>
+                </div>
+                "
+                class="nav-link nav-icons" href="#shoppingcart">
+                  <i class="fa fa-shopping-cart"><span class="badge rounded-circle translate-middle">3</span></i>
                 </a>
               </li>
               <li class="nav-item">
@@ -67,7 +142,7 @@
           </div> -->
       </div>
     </nav>
-    <!-- Modal -- Search Flower Shop Nearby -->
+    <!-- Modal -- Search -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -77,7 +152,7 @@
           </div>
           <div class="modal-body">
             <div class="input-group mb-3">
-              <input type="text" class="form-control border-success border-opacity-25" placeholder="I am looking for a  flower shop near me..." aria-label="Search Flowershop Nearby" aria-describedby="button-addon2">
+              <input type="text" class="form-control border-success border-opacity-25" placeholder="Search Flower" aria-label="Search" aria-describedby="button-addon2">
               <a href="#" class="btn btn-outline-success" type="button" id="button-addon2"><i class="fas fa-search"></i></a>
             </div>
           </div>
@@ -215,7 +290,7 @@
           </div>
           <div id="welcome-text" class=" bg-success bg-opacity-25 rounded col col-md col-sm m-auto m-md-auto m-sm-auto ">
             <p><h3>Welcome to <span id="boldText">Flower</span>plicity</h3></p>
-            <p>Come discover our collection of silk flowers online at Flowerplicity where we offer some of the best silk flower arrangements out there!</p>
+            <h5><p>Simply. Easy. Hassle Free.</p></h5>
           </div>
         </div>
       </section>
@@ -223,7 +298,7 @@
         <div id="shopnearby-row" class="row">
           <div id="welcome-text" class=" bg-warning bg-opacity-50 rounded col col-md col-sm-1 m-auto">
             <p><h3><span id="boldText">ONE STOP SHOPPING FOR ALL OF YOUR FLORAL NEEDS</span></h3></p>
-            <a id="btnshop-nearby" href="#">SHOPS NEARBY <i class="fas fa-long-arrow-alt-right"></i></a>
+            <a id="btnshop-nearby" href="pages/shops.html">SHOPS NEARBY <i class="fas fa-long-arrow-alt-right"></i></a>
           </div>
           <div class="col col-sm col-md" id="div-welcomeImg">
             <img id="shop-nearbyImage" class="img-fluid" alt="">
@@ -233,90 +308,112 @@
       <section class="container container-md container-sm mt-5 mt-md-5 mt-sm-5 mt-5">
         <h1 class="fw-bold text-center">Best Seller</h1>
         <hr class="style-eight">
-        <div class="row bs-row m-auto pb-2">
-          <div id="" class="div-bsimg col-sm-4 col-md-4">
-            <img alt="" class="img-fluid" id="bs-img1">
-            <div class="d-flex mt-2">
-              <a class="nav-link bs-icons" href="#">
-                <i class="fa fa-shopping-cart"></i>
-              </a>
-              <a class="nav-link bs-icons" href="#">
-                <i class="far fa-heart"></i>
-              </a>
-              <a class="bs-icons nav-link" href="#"><i class="fas fa-eye"></i></a>
+        <div class="bs-row row row-cols-1 row-cols-md-3 row-cols-sm-1 row-cols-md-3 g-4">
+          <div class="col column">
+            <div class="card w-100 h-100">
+              <img id="bs-img1" class="card-img-top">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <a href="#" class="card-link link-dark text-decoration-none fw-bold">White Flower</a>
+                  <p class="card-text">&#8369 1000</p>
+                </div>
+                <p class="card-text float-end"><s>&#8369 2000</s></p>
+              </div>
+              <div class="card-footer">
+                <i class="fas fa-truck"></i> Same Day Delivery
+                <i class="far fa-heart float-end"></i>
+              </div>
             </div>
           </div>
-          <div class="div-bsimg col-sm-4 col-md-4">
-            <img alt="" class="img-fluid" id="bs-img2">
-            <div class="d-flex mt-2">
-              <a class="nav-link bs-icons" href="#">
-                <i class="fa fa-shopping-cart"></i>
-              </a>
-              <a class="nav-link bs-icons" href="#">
-                <i class="far fa-heart"></i>
-              </a>
-              <a class="bs-icons nav-link" href="#"><i class="fas fa-eye"></i></a>
+          <div class="col column">
+            <div class="card w-100 h-100">
+              <img id="bs-img2" class="card-img-top" alt="">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <a href="#" class="card-link link-dark text-decoration-none fw-bold">Lavender</a>
+                  <p class="card-text">&#8369 1200</p>
+                </div>
+                <p class="card-text float-end"><s>&#8369 2000</s></p>
+              </div>
+              <div class="card-footer">
+                <i class="fas fa-truck"></i> Next Day Delivery
+                <i class="far fa-heart float-end"></i>
+              </div>
             </div>
           </div>
-          <div id="div-img3" class="div-bsimg col-sm-4 col-md-4">
-            <img alt="" class="img-fluid" id="bs-img3">
-            <div class="d-flex mt-2">
-              <a class="nav-link bs-icons" href="#">
-                <i class="fa fa-shopping-cart"></i>
-              </a>
-              <a class="nav-link bs-icons" href="#">
-                <i class="far fa-heart"></i>
-              </a>
-              <a class="bs-icons nav-link" href="#"><i class="fas fa-eye"></i></a>
+          <div class="col column">
+            <div class="card w-100 h-100">
+              <img id="bs-img3" class="card-img-top" alt="">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <a href="#" class="card-link link-dark text-decoration-none fw-bold">Pink Rose</a>
+                  <p class="card-text">&#8369 1900</p>
+                </div>
+                <p class="card-text float-end"><s>&#8369 2200</s></p>
+              </div>
+              <div class="card-footer">
+                <i class="fas fa-truck"></i> Same Day Delivery
+                <i class="far fa-heart float-end"></i>
+              </div>
             </div>
           </div>
-          <div class="div-bsimg col-sm-4 col-md-4">
-            <img alt="" class="img-fluid" id="bs-img4">
-            <div class="d-flex mt-2">
-              <a class="nav-link bs-icons" href="#">
-                <i class="fa fa-shopping-cart"></i>
-              </a>
-              <a class="nav-link bs-icons" href="#">
-                <i class="far fa-heart"></i>
-              </a>
-              <a class="bs-icons nav-link" href="#"><i class="fas fa-eye"></i></a>
+          <div class="col column">
+            <div class="card w-100 h-100">
+              <img id="bs-img4" class="card-img-top" alt="">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <a href="#" class="card-link link-dark text-decoration-none fw-bold">Pale Red Flower</a>
+                  <p class="card-text">&#8369 1500</p>
+                </div>
+                <p class="card-text float-end"><s>&#8369 1800</s></p>
+              </div>
+              <div class="card-footer">
+                <i class="fas fa-truck"></i> Next Day Delivery
+                <i class="far fa-heart float-end"></i>
+              </div>
             </div>
           </div>
-          <div class="div-bsimg col-sm-4 col-md-4">
-            <img alt="" class="img-fluid" id="bs-img5">
-            <div class="d-flex mt-2">
-              <a class="nav-link bs-icons" href="#">
-                <i class="fa fa-shopping-cart"></i>
-              </a>
-              <a class="nav-link bs-icons" href="#">
-                <i class="far fa-heart"></i>
-              </a>
-              <a class="bs-icons nav-link" href="#"><i class="fas fa-eye"></i></a>
+          <div class="col column">
+            <div class="card w-100 h-100">
+              <img id="bs-img5" class="card-img-top" alt="">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <a href="#" class="card-link link-dark text-decoration-none fw-bold">White Flower</a>
+                  <p class="card-text">&#8369 900</p>
+                </div>
+                <p class="card-text float-end"><s>&#8369 1000</s></p>
+              </div>
+              <div class="card-footer">
+                <i class="fas fa-truck"></i> Same Day Delivery
+                <i class="far fa-heart float-end"></i>
+              </div>
             </div>
           </div>
-          <div class="div-bsimg col-sm-4 col-md-4">
-            <img alt="" class="img-fluid" id="bs-img6">
-            <div class="d-flex mt-2">
-              <a class="nav-link bs-icons" href="#">
-                <i class="fa fa-shopping-cart"></i>
-              </a>
-              <a class="nav-link bs-icons" href="#">
-                <i class="far fa-heart"></i>
-              </a>
-              <a class="bs-icons nav-link" href="#"><i class="fas fa-eye"></i></a>
+          <div class="col column">
+            <div class="card w-100 h-100">
+              <img id="bs-img6" class="card-img-top" alt="">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <a href="#" class="card-link link-dark text-decoration-none fw-bold">White Flower</a>
+                  <p class="card-text">&#8369 1000</p>
+                </div>
+                <!-- <p class="card-text float-end"><s>&#8369 2000</s></p> -->
+              </div>
+              <div class="card-footer">
+                <i class="fas fa-truck"></i> Same Day Delivery
+                <i class="far fa-heart float-end"></i>
+              </div>
             </div>
           </div>
         </div>
-        <!-- <div class="row mt-5 m-auto bs-row">
-        </div> -->
       </section>
     </main>
     <article class="container mt-5 m-auto gap-md-1">
-      <h1 class="fw-bold text-center">Related Articles</h1>
+      <h1 class="fw-bold text-center">Best Gift Ideas For Your Love Ones</h1>
       <hr class="style-eight">
       <div class="row blog-row">
         <div class="col-sm-4 col-md-4 card-tablet">
-          <div id="first-blog" class="card">
+          <!-- <div id="first-blog" class="card">
             <img src="images/bs1.jpg" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -326,10 +423,15 @@
             <div class="card-footer">
               <p>content</p>
             </div>
-          </div>
+          </div> -->
+          <figure class="figure">
+            <img src="images/lina-verovaya-GQQ6BRJxysU-unsplash.jpg" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption"><h4>Trendy backpacks for your trendy love ones just like you.</h4></figcaption>
+            <a href="#" class="text-black">See more</a>
+          </figure>
         </div>
         <div id="second-blog" class="col-sm-4 col-md-4 card-tablet">
-          <div class="card">
+          <!-- <div class="card">
               <img src="images/bs1.jpg" class="card-img-top img-fluid" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -339,20 +441,19 @@
               <div class="card-footer">
                 <p>content</p>
               </div>
-          </div>
+          </div> -->
+          <figure class="figure">
+            <img src="images/chocs.jpg" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption"><h4>Spread the sweetness overload this valentine's season.</h4></figcaption>
+            <a href="#" class="text-black">See more</a>
+          </figure>
         </div>
         <div id="third-blog" class="col-sm-4 col-md-4 card-tablet">
-            <div class="card">
-              <img src="images/bs1.jpg" class="card-img-top img-fluid" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-              <div class="card-footer">
-                <p>content</p>
-              </div>
-          </div>
+          <figure class="figure">
+            <img src="images/wines.jpg" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption"><h4>Sounds. Like. Celebration</h4></figcaption>
+            <a href="#" class="text-black">See more</a>
+          </figure>
         </div>
       </div>
     </article>
@@ -492,7 +593,14 @@
 <!-- Footer -->
 </body>
 <script>
+  // Tooltips
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+const popover = new bootstrap.Popover('.example-popover', {
+  container: 'body'
+})
 </script>
 </html>

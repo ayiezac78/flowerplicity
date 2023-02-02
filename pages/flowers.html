@@ -11,547 +11,199 @@
   <script src="../js/bootstrap.bundle.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm fixed-top">
-      <div class="container-lg container-md container-sm">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="../index.html">
-          <p><h3><span id="boldText">Flower</span>plicity</h3></p>
-        </a>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul id="navMenus" class="navbar-nav mx-auto mx-md-auto mx-sm-auto mb-2 mb-md-2 mb-sm-2 mb-lg-0 mb-md-0 mb-sm-0 justify-content-center col">
-              <li class="nav-item">
-                <a class="nav-link active navMenuLink" aria-current="page" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navMenuLink" href="../pages/flowers.html">Flowers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navMenuLink" href="#">Gift Ideas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navMenuLink" href="#">Blogs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navMenuLink" href="#">About Us</a>
-              </li>
-            </ul>
-            <ul id="rightNav" class="navbar-nav ms-auto ms-md-auto ms-sm-auto mb-2 mb-md-2 mb-sm-2 mb-lg-0 mb-md-0 mb-sm-0">
-              <li class="nav-item">
-                <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav-link nav-icons" href="#">
-                  <i class="fas fa-search"></i>
-                </a>
-                <!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button> -->
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-icons" href="404.html">
-                  <i class="far fa-heart"><span class="badge rounded-circle translate-middle">2</span></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-icons" href="404.html">
-                  <i class="fa fa-shopping-cart"><span class="badge rounded-circle translate-middle">5</span></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a id="btn-signup" class="nav-link" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sign in <i class="fas fa-sign-in-alt"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- <div class="collapse navbar-collapse col" id="navbarTogglerDemo03">
-          </div> -->
-      </div>
-    </nav>
-    <!-- Modal -- Search Flower Shop Nearby -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header bg-success bg-opacity-50">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Search</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="input-group mb-3">
-              <input type="text" class="form-control border-success border-opacity-25" placeholder="I am looking for a  flower shop near me..." aria-label="Search Flowershop Nearby" aria-describedby="button-addon2">
-              <a href="404.html" class="btn btn-outline-success" type="button" id="button-addon2"><i class="fas fa-search"></i></a>
-            </div>
-          </div>
-          <!-- <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div> -->
+  <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm fixed-top">
+    <div class="container-lg container-md container-sm">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html">
+        <p><h3><span id="boldText">Flower</span>plicity</h3></p>
+      </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul id="navMenus" class="navbar-nav mx-auto mx-md-auto mx-sm-auto mb-2 mb-md-2 mb-sm-2 mb-lg-0 mb-md-0 mb-sm-0 justify-content-center col">
+            <li class="nav-item">
+              <a class="nav-link active navMenuLink" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navMenuLink" href="../pages/flowers.html">Flowers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navMenuLink" href="#">Gift Ideas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navMenuLink" href="#">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navMenuLink" href="#">About Us</a>
+            </li>
+          </ul>
+          <ul id="rightNav" class="navbar-nav ms-auto ms-md-auto ms-sm-auto mb-2 mb-md-2 mb-sm-2 mb-lg-0 mb-md-0 mb-sm-0">
+            <li class="nav-item">
+              <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav-link nav-icons" href="#">
+                <i class="fas fa-search"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icons" href="#">
+                <i class="far fa-heart"><span class="badge rounded-circle translate-middle">2</span></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icons" href="#">
+                <i class="fa fa-shopping-cart"><span class="badge rounded-circle translate-middle">5</span></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="btn-signup" class="nav-link" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sign in <i class="fas fa-sign-in-alt"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </div>
-    <!-- Sign up form modal -->
-    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Sign in to <b>Flower</b>plicity</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <p class="ps-3 mt-2">
-            Sign in with:
-            <a href="#"><i class="fab fa-facebook-f ps-2"></i></a>
-            <a href="#"><i class="fab fa-google text-danger ps-2"></i></a>
-            <a href="#"><i class="fab fa-instagram ps-2 text-black"></i></a>
-          </p>
-          <div class="modal-body">
-            <!-- Show a second modal and hide this one with the button below. -->
-            <form>
-              <div class="row">
-                <div class="form col-md-6">
-                  <input class="input" placeholder="Email address" required="" type="email">
-                  <span class="input-border"></span>
-                </div>
-                <div class="form col-md-6">
-                  <input class="input" placeholder="Password" required="" type="password">
-                  <span class="input-border"></span>
-                </div>
-                <div class="row mt-2">
-                  <div class="col d-flex justify-content-start">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckCheck" checked>
-                      <label class="form-check-label" for="flexCheckDefault">
-                        Remember me
-                      </label>
-                    </div>
-                  </div>
-                  <div id="forgot-txt" class="col">
-                    <!-- Simple link -->
-                    <a href="#!">Forgot password?</a>
-                  </div>
-                </div>
-              </div>
-              <button class="btn-sm btn btn-success mt-2 ">SIGN IN</button>
-            </form>
-          </div>
-          <div class="modal-footer justify-content-between">
-            <div class="row">
-              <div class="col">
-                <p>Don't have an account?
-                  <a class="link-primary" href="#" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Sign up here</a>
-                </p>
-              </div>
-              <!-- <div id="regQ-txt" class="col">
-                <p>Are you a flower shop owner or a local flower grower?
-                  <a href="#">Register Here</a>
-                </p>
-              </div> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Sign up to <b>Flower</b>plicity</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="row">
-                <div class="form col-md-6">
-                  <input class="input" placeholder="User Name" required="" type="text">
-                  <span class="input-border"></span>
-                </div>
-                <div class="form col-12">
-                  <input id="shopName-txt" class="input" placeholder="(OPTIONAL) Business Name" type="text">
-                  <span class="input-border"></span>
-                </div>
-                <div>
-                  <a tabindex="0" href="#"><i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip" data-bs-title="This applies to those who have a flower shop or local flower grower wants to post their floral products." class="far fa-question-circle"></i></a>
-                </div>
-                <div class="form col-md-6">
-                  <input class="input" placeholder="Email address" required="" type="email">
-                  <span class="input-border"></span>
-                </div>
-                <div class="form col-md-6">
-                  <input class="input" placeholder="Password" required="" type="password">
-                  <span class="input-border"></span>
-                </div>
-                <div class="form col-md-6">
-                  <input class="input" placeholder="Confirm Password" required="" type="password">
-                  <span class="input-border"></span>
-                </div>
-              </div>
-              <div class="form-check pt-3">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckCheck" checked>
-                <label class="form-check-label" for="flexCheckDefault">
-                  I have read and agree to the terms
-                </label>
-              </div>
-              <button class="btn-register mt-3 float-end">REGISTER</button>
-            </form>
-          </div>
-          <div class="modal-footer justify-content-between">
-            <div id="signup-links" class="">
-              Sign up using:
-              <a href="#"><i class="fab fa-facebook-f ps-2"></i></a>
-              <a href="#"><i class="fab fa-google text-danger ps-2"></i></a>
-              <a href="#"><i class="fab fa-instagram ps-2 text-black"></i></a>
-            </div>
-
-            <a href="#" class="link-info float-start" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to Log in</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <main>
-      <!-- Carousel -->
-      <section class="container container-md container-sm container-lg">
-        <div id="myCarousel" class="carousel slide carousel-fade mt-5 mt-lg-5 mt-md-5 mt-sm-5" data-bs-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-            <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="2000">
-              <div class="overlay-image d-block"  style="background-image: url(./images/micheile.jpg);"></div>
-              <div id="carousel-container" class="container container-lg container-md container-sm">
-                <h1>Example</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore soluta accusantium nobis architecto hic dolores magnam animi veritatis, ab vel nulla consectetur sit tenetur fugit! Recusandae odio aspernatur corrupti provident.</p>
-                <!-- <a href="#" class="btn btn-lg btn-primary">
-                  Buy
-                </a> -->
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <div class="overlay-image d-block"  style="background-image: url(./images/yellow.jpg);"></div>
-              <div id="carousel-container" class="container container-lg container-md container-sm">
-                <h1>Example</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore soluta accusantium nobis architecto hic dolores magnam animi veritatis, ab vel nulla consectetur sit tenetur fugit! Recusandae odio aspernatur corrupti provident.</p>
-                <!-- <a href="#" class="btn btn-lg btn-primary">
-                  Buy
-                </a> -->
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="5000">
-              <div class="overlay-image d-block"  style="background-image: url(./images/roonz.jpg);"></div>
-              <div id="carousel-container" class="container container-lg container-md container-sm">
-                <h1>Example</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore soluta accusantium nobis architecto hic dolores magnam animi veritatis, ab vel nulla consectetur sit tenetur fugit! Recusandae odio aspernatur corrupti provident.</p>
-                <!-- <a href="#" class="btn btn-lg btn-primary">
-                  Buy
-                </a> -->
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="5000">
-              <div class="overlay-image d-block"  style="background-image: url(./images/pawel.jpg);"></div>
-              <div id="carousel-container" class="container container-lg container-md container-sm">
-                <h1>Example</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore soluta accusantium nobis architecto hic dolores magnam animi veritatis, ab vel nulla consectetur sit tenetur fugit! Recusandae odio aspernatur corrupti provident.</p>
-                <!-- <a href="#" class="btn btn-lg btn-primary">
-                  Buy
-                </a> -->
-              </div>
-            </div>
-          </div>
-          <a href="#myCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
-            <span class="sr-only">Previous</span>
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          </a>
-          <a href="#myCarousel" class="carousel-control-next" role="button" data-bs-slide="next">
-            <span class="sr-only">Next</span>
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </a>
-        </div>
-      </section>
-      <section class="container container-md container-sm mt-1 mt-md-1 mt-sm-1">
-        <div id="welcome-row" class="row">
-          <div class="col col-md col-sm" id="div-welcomeImg">
-            <img id="welcome-image" class="img-fluid rounded border-0" alt="">
-          </div>
-          <div id="welcome-text" class=" bg-success bg-opacity-25 rounded col col-md col-sm m-auto m-md-auto m-sm-auto ">
-            <p><h3>Welcome to <span id="boldText">Flower</span>plicity</h3></p>
-            <p>Come discover our collection of silk flowers online at Flowerplicity where we offer some of the best silk flower arrangements out there!</p>
-          </div>
-        </div>
-      </section>
-      <section class="container container-md container-sm mt-5 mt-md-5 mt-sm-5">
-        <div id="shopnearby-row" class="row">
-          <div id="welcome-text" class=" bg-warning bg-opacity-50 rounded col col-md col-sm-1 m-auto">
-            <p><h3><span id="boldText">ONE STOP SHOPPING FOR ALL OF YOUR FLORAL NEEDS</span></h3></p>
-            <a id="btnshop-nearby" href="#">SHOPS NEARBY <i class="fas fa-long-arrow-alt-right"></i></a>
-          </div>
-          <div class="col col-sm col-md" id="div-welcomeImg">
-            <img id="shop-nearbyImage" class="img-fluid" alt="">
-          </div>
-        </div>
-      </section>
-      <section class="container container-md container-sm mt-5 mt-md-5 mt-sm-5 mt-5">
-        <h1 class="fw-bold text-center">Best Seller</h1>
-        <hr class="style-eight">
-        <div class="row bs-row m-auto pb-2">
-          <div id="" class="div-bsimg col-sm-4 col-md-4">
-            <img alt="" class="img-fluid" id="bs-img1">
-            <div class="d-flex mt-2">
-              <a class="nav-link bs-icons" href="#">
-                <i class="fa fa-shopping-cart"></i>
-              </a>
-              <a class="nav-link bs-icons" href="#">
-                <i class="far fa-heart"></i>
-              </a>
-              <a class="bs-icons nav-link" href="#"><i class="fas fa-eye"></i></a>
-            </div>
-          </div>
-          <div class="div-bsimg col-sm-4 col-md-4">
-            <img alt="" class="img-fluid" id="bs-img2">
-            <div class="d-flex mt-2">
-              <a class="nav-link bs-icons" href="#">
-                <i class="fa fa-shopping-cart"></i>
-              </a>
-              <a class="nav-link bs-icons" href="#">
-                <i class="far fa-heart"></i>
-              </a>
-              <a class="bs-icons nav-link" href="#"><i class="fas fa-eye"></i></a>
-            </div>
-          </div>
-          <div id="div-img3" class="div-bsimg col-sm-4 col-md-4">
-            <img alt="" class="img-fluid" id="bs-img3">
-            <div class="d-flex mt-2">
-              <a class="nav-link bs-icons" href="#">
-                <i class="fa fa-shopping-cart"></i>
-              </a>
-              <a class="nav-link bs-icons" href="#">
-                <i class="far fa-heart"></i>
-              </a>
-              <a class="bs-icons nav-link" href="#"><i class="fas fa-eye"></i></a>
-            </div>
-          </div>
-          <div class="div-bsimg col-sm-4 col-md-4">
-            <img alt="" class="img-fluid" id="bs-img4">
-            <div class="d-flex mt-2">
-              <a class="nav-link bs-icons" href="#">
-                <i class="fa fa-shopping-cart"></i>
-              </a>
-              <a class="nav-link bs-icons" href="#">
-                <i class="far fa-heart"></i>
-              </a>
-              <a class="bs-icons nav-link" href="#"><i class="fas fa-eye"></i></a>
-            </div>
-          </div>
-          <div class="div-bsimg col-sm-4 col-md-4">
-            <img alt="" class="img-fluid" id="bs-img5">
-            <div class="d-flex mt-2">
-              <a class="nav-link bs-icons" href="#">
-                <i class="fa fa-shopping-cart"></i>
-              </a>
-              <a class="nav-link bs-icons" href="#">
-                <i class="far fa-heart"></i>
-              </a>
-              <a class="bs-icons nav-link" href="#"><i class="fas fa-eye"></i></a>
-            </div>
-          </div>
-          <div class="div-bsimg col-sm-4 col-md-4">
-            <img alt="" class="img-fluid" id="bs-img6">
-            <div class="d-flex mt-2">
-              <a class="nav-link bs-icons" href="#">
-                <i class="fa fa-shopping-cart"></i>
-              </a>
-              <a class="nav-link bs-icons" href="#">
-                <i class="far fa-heart"></i>
-              </a>
-              <a class="bs-icons nav-link" href="#"><i class="fas fa-eye"></i></a>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="row mt-5 m-auto bs-row">
+        <!-- <div class="collapse navbar-collapse col" id="navbarTogglerDemo03">
         </div> -->
-      </section>
-    </main>
-    <article class="container mt-5 m-auto gap-md-1">
-      <h1 class="fw-bold text-center">Related Articles</h1>
-      <hr class="style-eight">
-      <div class="row blog-row">
-        <div class="col-sm-4 col-md-4 card-tablet">
-          <div id="first-blog" class="card">
-            <img src="images/bs1.jpg" class="card-img-top img-fluid" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-            <div class="card-footer">
-              <p>content</p>
-            </div>
-          </div>
-        </div>
-        <div id="second-blog" class="col-sm-4 col-md-4 card-tablet">
-          <div class="card">
-              <img src="images/bs1.jpg" class="card-img-top img-fluid" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-              <div class="card-footer">
-                <p>content</p>
-              </div>
-          </div>
-        </div>
-        <div id="third-blog" class="col-sm-4 col-md-4 card-tablet">
-            <div class="card">
-              <img src="images/bs1.jpg" class="card-img-top img-fluid" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-              <div class="card-footer">
-                <p>content</p>
-              </div>
-          </div>
-        </div>
-      </div>
-    </article>
-   <!-- Footer -->
-<footer class="text-center text-lg-start bg-white text-muted mt-3">
-  <!-- Section: Social media -->
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <!-- Left -->
-    <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on social networks:</span>
     </div>
-    <!-- Left -->
-
-    <!-- Right -->
-    <div>
-      <a href="#" class="me-4 link-secondary text-decoration-none">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="#" class="me-4 link-secondary text-decoration-none">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="#" class="me-4 link-secondary text-decoration-none">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="#" class="me-4 link-secondary text-decoration-none">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </div>
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
-
-  <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-sun me-3 text-secondary"></i><b>FLOWER</b>PLICITY
-          </h6>
-          <p>
-            Sign up for our newsletter
-          </p>
+  </nav>
+  <!-- end of navs -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-success bg-opacity-50">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Search</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
           <div class="input-group mb-3">
-            <input type="email" class="form-control" placeholder="Email address" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe</button>
+            <input type="text" class="form-control border-success border-opacity-25" placeholder="I am looking for a  flower shop near me..." aria-label="Search" aria-describedby="button-addon2">
+            <a href="#" class="btn btn-outline-success" type="button" id="button-addon2"><i class="fas fa-search"></i></a>
           </div>
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Content
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Home</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Flowers</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Blogs</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Gift Ideas</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">About Us</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Shop Near Me</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Help
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Delivery Information</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Shop & Farm Near You</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Returns & Refunds Policy</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Privacy Policy</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Terms & Conditions</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Chat Support</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Site Map</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i class="fas fa-home me-3 text-secondary"></i> Bacolod City, Negros Occidental 6100, PH</p>
-          <p>
-            <i class="fas fa-envelope me-3 text-secondary"></i>
-            flowerplicity@gmail.com
-          </p>
-          <p><i class="fas fa-phone me-3 text-secondary"></i> +639659051766</p>
-          <!-- <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p> -->
-        </div>
-        <!-- Grid column -->
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
       </div>
-      <!-- Grid row -->
     </div>
-  </section>
-  <!-- Section: Links  -->
-
-  <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-    <p>coded by Ariel Maniago & Rosie Conde</p>
-    © 2023
   </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
+  <!-- Sign up form modal -->
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Welcome to <b>Flower</b>plicity</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Show a second modal and hide this one with the button below. -->
+          <form>
+            <div class="row">
+              <div class="form col-md-6">
+                <input class="input" placeholder="Email address" required="" type="email">
+                <span class="input-border"></span>
+              </div>
+              <div class="form col-md-6">
+                <input class="input" placeholder="Password" required="" type="password">
+                <span class="input-border"></span>
+              </div>
+              <div class="row mt-4">
+                <div class="col d-flex justify-content-start">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckCheck" checked>
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Remember me
+                    </label>
+                  </div>
+                </div>
+                <div id="forgot-txt" class="col">
+                  <!-- Simple link -->
+                  <a href="#!">Forgot password?</a>
+                </div>
+              </div>
+            </div>
+            <a href="pages/user.html" class="btn-sm btn btn-success mt-2 ">SIGN IN</a>
+          </form>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <div class="row">
+            <div class="col">
+              <p id="sign-options" class="m-auto">
+                Sign in or sign up with:
+                <a href="#"><i class="fab fa-facebook-f ps-2"></i></a>
+                <a href="#"><i class="fab fa-google text-danger ps-2"></i></a>
+                <a href="#"><i class="fab fa-twitter ps-2 text-primary"></i></a>
+              </p>
+            </div>
+            <!-- <div id="regQ-txt" class="col">
+              <p>Are you a flower shop owner or a local flower grower?
+                <a href="#">Register Here</a>
+              </p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of modal -->
+  <main>
+    <!-- Carousel -->
+    <section class="container container-md container-sm container-lg">
+      <div id="myCarousel" class="carousel slide carousel-fade mt-5 mt-lg-5 mt-md-5 mt-sm-5" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <div class="overlay-image d-block"  style="background-image: url(./images/micheile.jpg);"></div>
+            <div id="carousel-container" class="container container-lg container-md container-sm">
+              <h1>Example</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore soluta accusantium nobis architecto hic dolores magnam animi veritatis, ab vel nulla consectetur sit tenetur fugit! Recusandae odio aspernatur corrupti provident.</p>
+              <!-- <a href="#" class="btn btn-lg btn-primary">
+                Buy
+              </a> -->
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <div class="overlay-image d-block"  style="background-image: url(./images/yellow.jpg);"></div>
+            <div id="carousel-container" class="container container-lg container-md container-sm">
+              <h1>Example</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore soluta accusantium nobis architecto hic dolores magnam animi veritatis, ab vel nulla consectetur sit tenetur fugit! Recusandae odio aspernatur corrupti provident.</p>
+              <!-- <a href="#" class="btn btn-lg btn-primary">
+                Buy
+              </a> -->
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="overlay-image d-block"  style="background-image: url(./images/roonz.jpg);"></div>
+            <div id="carousel-container" class="container container-lg container-md container-sm">
+              <h1>Example</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore soluta accusantium nobis architecto hic dolores magnam animi veritatis, ab vel nulla consectetur sit tenetur fugit! Recusandae odio aspernatur corrupti provident.</p>
+              <!-- <a href="#" class="btn btn-lg btn-primary">
+                Buy
+              </a> -->
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="overlay-image d-block"  style="background-image: url(./images/pawel.jpg);"></div>
+            <div id="carousel-container" class="container container-lg container-md container-sm">
+              <h1>Example</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore soluta accusantium nobis architecto hic dolores magnam animi veritatis, ab vel nulla consectetur sit tenetur fugit! Recusandae odio aspernatur corrupti provident.</p>
+              <!-- <a href="#" class="btn btn-lg btn-primary">
+                Buy
+              </a> -->
+            </div>
+          </div>
+        </div>
+        <a href="#myCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+          <span class="sr-only">Previous</span>
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a href="#myCarousel" class="carousel-control-next" role="button" data-bs-slide="next">
+          <span class="sr-only">Next</span>
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+  </main>
 </body>
-<script>
-  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-</script>
 </html>

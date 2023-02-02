@@ -1,0 +1,29 @@
+.shop-img{
+  background-size: cover;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+}
+#store1{
+  background-image: url('../images/store-gardening.png');
+}
+#store2{
+  background-image: url('../images/bouquet-of-daisys.png');
+}
+#store3{
+  background-image: url('../images/flower-in-a-pot.png');
+}
+#store4{
+  background-image: url('../images/sunflower-dark.png');
+}
+#store5{
+  background-image: url('../images/three-flowers-in-a-pot.png');
+}
+#store6{
+  background-image: url('../images/lotus-svgrepo-com.svg');
+}
+
+
+
+
+
