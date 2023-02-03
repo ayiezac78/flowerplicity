@@ -16,12 +16,24 @@
   #bgshop-nearby{
     display: none;
   }
+  span.badge{
+    position:relative;
+    bottom: 18px;
+    font-size: 8px;
+    left: 15px;
+  }
+  #btn-signup{
+    width: 83px;
+  }
+  .card-footer{
+    font-size: 12px;
+  }
+  .custom-popover{
+    max-width: 100%;
+  }
 }
 /* Mobile Viewport */
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
-  *{
-/*     outline: 1px dotted; */
-  }
   .navbar-brand{
     position:relative;
     right:20px;
@@ -52,20 +64,16 @@
   .card-tablet{
     margin: 10px auto;
   }
-  .div-bsimg{
+  .column{
+    float: left;
     width: 50%;
-    height: 300px;
     padding: 10px;
-    float:left;
-    margin: 30px auto;
+    font-size: 12px;
   }
   .bs-row:after{
-    content: "";
-    display:table;
-    clear:both;
-  }
-  #bgshop-nearby{
-    display:none;
+    content:"";
+    display: table;
+    clear: both;
   }
   .fa-question-circle{
     left: 13px;

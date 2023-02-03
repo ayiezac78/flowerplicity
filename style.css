@@ -1,6 +1,7 @@
 @import url(fonts/fonts.css);
 @import url(fontawesome-free/css/all.css);
-@import url(css/media-queries.css);
+@import url(styles/index-media-queries.css);
+@import url(styles/shops.css);
 *{
   /* outline: dotted 1px; */
   font-family: 'Poppins', sans-serif;
@@ -54,7 +55,9 @@ nav{
   width: 100%;
   left: 0%;
 }
-
+.custom-popover{
+  max-width: 35%;
+}
 .navMenuLink:after {
   content: "";
   pointer-events: none;
@@ -135,42 +138,42 @@ nav{
   background-size: cover;
   background-position: center;
   height: 300px;
-  width: 400px;
+  /* width: 450px; */
 }
 #bs-img2{
   background-image: url('images/bs2.jpg');
   background-size: cover;
   background-position: center;
   height: 300px;
-  width: 400px;
+  /* width: 415px; */
 }
 #bs-img3{
   background-image: url('images/bs3.jpg');
   background-size: cover;
   background-position: center;
   height: 300px;
-  width: 400px;
+  /* width: 415px; */
 }
 #bs-img4{
   background-image: url('images/bs4.jpg');
   background-size: cover;
   background-position: center;
   height: 300px;
-  width: 400px;
+  /* width: 415px; */
 }
 #bs-img5{
   background-image: url('images/bs5.jpg');
   background-size: cover;
   background-position: center;
   height: 300px;
-  width: 400px;
+  /* width: 450px; */
 }
 #bs-img6{
   background-image: url('images/bs6.jpg');
   background-size: cover;
   background-position: center;
   height: 300px;
-  width: 400px;
+  /* width: 450px; */
 }
 .bs-icons{
   margin: 0px 8px;
