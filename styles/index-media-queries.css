@@ -1,0 +1,81 @@
+/* Tablet Viewport */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  h3{
+    font-size: 25px;
+  }
+  #rightNav li{
+    font-size: 13px;
+  }
+  .card-tablet{
+    margin: 20px auto;
+    /* outline: dotted 1px; */
+  }
+  .div-bsimg{
+    margin: 10px auto;
+  }
+  #bgshop-nearby{
+    display: none;
+  }
+  span.badge{
+    position:relative;
+    bottom: 18px;
+    font-size: 8px;
+    left: 15px;
+  }
+  #btn-signup{
+    width: 83px;
+  }
+  .card-footer{
+    font-size: 12px;
+  }
+  .custom-popover{
+    max-width: 100%;
+  }
+}
+/* Mobile Viewport */
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+  .navbar-brand{
+    position:relative;
+    right:20px;
+    margin:auto;
+  }
+  #navMenus{
+    text-align: center;
+  }
+  #rightNav{
+/*     background-color: blue; */
+    flex-direction:row;
+    position:relative;
+    left: 70px;
+    margin:auto 10px;
+    width: 250px;
+    font-size: 12px;
+  }
+  #welcome-row{
+    flex-direction:column;
+  }
+  #shopnearby-row{
+    flex-direction: column-reverse;
+    font-size: 12px;
+  }
+  #shopnearby-row h3{
+    font-size: 20px;
+  }
+  .card-tablet{
+    margin: 10px auto;
+  }
+  .column{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    font-size: 12px;
+  }
+  .bs-row:after{
+    content:"";
+    display: table;
+    clear: both;
+  }
+  .fa-question-circle{
+    left: 13px;
+  }
+}
