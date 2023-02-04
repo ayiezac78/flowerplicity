@@ -3,8 +3,6 @@
   background-position: center;
   width: 200px;
   height: 200px;
-  position:relative;
-  left:100px;
 }
 #store1{
   background-image: url('../images/store-gardening.png');
@@ -50,6 +48,16 @@
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){
   #shops-list{
     margin:auto;
+  }
+  .shop-img{
+    position:relative;
+  left:90px;
+  }
+  .card-body{
+    text-align:center;
+  }
+  .card{
+    padding: 15px;
   }
 }
 
