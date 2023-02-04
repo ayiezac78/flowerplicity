@@ -55,6 +55,7 @@
     flex-direction:column;
   }
   #shopnearby-row{
+    display: flex;
     flex-direction: column-reverse;
     font-size: 12px;
   }
@@ -77,5 +78,11 @@
   }
   .fa-question-circle{
     left: 13px;
+  }
+  .welcome-text{
+    width: 400px;
+  }
+  #shop-nearbyImage{
+    margin-bottom: 15px;
   }
 }
