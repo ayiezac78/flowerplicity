@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/bootstrap.css">
-  <link rel="stylesheet" href="../style.css">
-  <link rel="icon" href="../images/flowerplicity-website-favicon-white.png" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/styles/style.css">
+  <link rel="icon" href="../assets/images/flowerplicity-website-favicon-white.png" type="image/png" sizes="16x16">
   <title>Flowerplicity</title>
-  <script src="../js/bootstrap.bundle.js"></script>
+  <script src="../assets/js/bootstrap.bundle.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm fixed-top">
@@ -22,7 +22,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul id="navMenus" class="navbar-nav mx-auto mx-md-auto mx-sm-auto mb-2 mb-md-2 mb-sm-2 mb-lg-0 mb-md-0 mb-sm-0 justify-content-center col">
             <li class="nav-item">
-              <a class="nav-link active navMenuLink" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active navMenuLink" aria-current="page" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link navMenuLink" href="../pages/flowers.html">Flowers</a>
@@ -119,7 +119,7 @@
                 </div>
               </div>
             </div>
-            <a href="pages/user.html" class="btn-sm btn btn-success mt-2 ">SIGN IN</a>
+            <a href="../pages/user.html" class="btn-sm btn btn-success mt-2 ">SIGN IN</a>
           </form>
         </div>
         <div class="modal-footer justify-content-between">
@@ -144,36 +144,53 @@
   </div>
   <main class="container">
     <section class="container my-5 py-5">
-      <h1>My Wishlist</h1>
-      <table class="table table-striped table-hover">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
+      <h1 class="mt-2">My Wishlist</h1>
+      <div class="table-responsive">
+        <table id="text-size" class="table table-striped table-hover text-center">
+          <thead class="table-success">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col"></th>
+              <th scope="col">Flower</th>
+              <th scope="col">Price</th>
+              <th scope="col">Stock Status</th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td><img src="../assets/images/bs1.jpg" class="td-img img-fluid"></td>
+              <td><a href="../pages/flowers/white-flower.html" class="text-danger text-opacity-75 text-decoration-none ">White Flower</a></td>
+              <td>
+                &#8369 1000.00
+                <div>
+                  <s>&#8369 2000.00</s>
+                </div>
+              </td>
+              <td class="text-success">In Stock</td>
+              <td><a href="#" class="text-decoration-none btn-addtocart">ADD TO CART</a></td>
+              <td><a href="#" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Delete?"><i class="fa fa-trash"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td><img src="../assets/images/bs4.jpg" class="td-img img-fluid" alt=""></td>
+              <td><a href="#" class="text-danger text-opacity-75 text-decoration-none">Pale Red Flower</a></td>
+              <td>
+                &#8369 1000.00
+                <div>
+                  <s>&#8369 2000.00</s>
+                </div>
+              </td>
+              <td class="text-success">In Stock</td>
+              <td><a href="#" class="text-decoration-none btn-addtocart">ADD TO CART</a></td>
+              <td><a href="#" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Delete?"><i class="fa fa-trash"></i></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
   </main>
      <!-- Footer -->
