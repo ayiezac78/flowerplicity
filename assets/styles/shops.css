@@ -49,6 +49,16 @@
   #shops-list{
     margin:auto;
   }
+  .shop-img{
+    position:relative;
+  left:90px;
+  }
+  .card-body{
+    text-align:center;
+  }
+  .card{
+    padding: 15px;
+  }
 }
 
 
