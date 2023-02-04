@@ -3,6 +3,8 @@
   background-position: center;
   width: 200px;
   height: 200px;
+  position:relative;
+  left:100px;
 }
 #store1{
   background-image: url('../images/store-gardening.png');
