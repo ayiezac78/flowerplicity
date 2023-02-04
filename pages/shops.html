@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/bootstrap.css">
-  <link rel="stylesheet" href="../style.css">
-  <link rel="icon" href="../images/flowerplicity-website-favicon-white.png" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/styles/style.css">
+  <link rel="icon" href="../assets/images/flowerplicity-website-favicon-white.png" type="image/png" sizes="16x16">
   <title>Flowerplicity</title>
-  <script src="../js/bootstrap.bundle.js"></script>
+  <script src="../assets/js/bootstrap.bundle.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm fixed-top">
@@ -22,10 +22,10 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul id="navMenus" class="navbar-nav mx-auto mx-md-auto mx-sm-auto mb-2 mb-md-2 mb-sm-2 mb-lg-0 mb-md-0 mb-sm-0 justify-content-center col">
             <li class="nav-item">
-              <a class="nav-link active navMenuLink" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active navMenuLink" aria-current="page" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navMenuLink" href="./pages/flowers.html">Flowers</a>
+              <a class="nav-link navMenuLink" href="../pages/flowers.html">Flowers</a>
             </li>
             <li class="nav-item">
               <a class="nav-link navMenuLink" href="#">Gift Ideas</a>
@@ -44,91 +44,12 @@
               </a>
             </li>
             <li class="nav-item">
-              <a data-bs-toggle="popover" data-bs-custom-class="custom-popover" data-bs-html="true" data-bs-title="My Wishlist" data-bs-trigger="focus" data-bs-content="
-                <div class='row'>
-                  <a class='col' href='#'>
-                    <img src='../images/bs1.jpg'/class='img-fluid w-100 h-100 col'>
-                  </a>
-                    <p class='col'>
-                      &#8369 1000.00
-                      &#8369<s>2000.00</s> 
-                    </p>
-                    <p class='col'>
-                      In Stock
-                    </p>
-                    <p class='col'>
-                      <a class='text-black' href='#'>ADD TO CART</a>
-                    </p>
-                </div>
-                <div class='row my-1'>
-                  <a class='col' href='#'>
-                    <img src='../images/bs4.jpg'/class='img-fluid w-100 h-100 col'>
-                  </a>
-                    <p class='col'>
-                      &#8369 1500.00
-                      &#8369<s>1800.00</s> 
-                    </p>
-                    <p class='col'>
-                      In Stock
-                    </p>
-                    <p class='col'>
-                      <a class='text-black' href='#'>ADD TO CART</a>
-                    </p>
-                </div>
-                "
-              class="nav-link nav-icons" href="#wishlist">
+              <a class="nav-link nav-icons" href="../pages/wishlist.html">
                 <i class="far fa-heart"><span class="badge rounded-circle translate-middle">2</span></i>
               </a>
             </li>
             <li class="nav-item">
-              <a data-bs-toggle="popover" data-bs-custom-class="custom-popover" data-bs-html="true" data-bs-title="My Shopping Cart" data-bs-trigger="focus" data-bs-content="
-              <div class='row'>
-                <a class='col' href='#'>
-                  <img src='../images/bs1.jpg'/class='img-fluid w-100 h-100 col'>
-                </a>
-                  <p class='col'>
-                    &#8369 1000.00
-                    &#8369<s>2000.00</s> 
-                  </p>
-                  <p class='col'>
-                    In Stock
-                  </p>
-                  <p class='col'>
-                    <a class='text-black' href='#'>ADD TO CART</a>
-                  </p>
-              </div>
-              <div class='row my-1'>
-                <a class='col' href='#'>
-                  <img src='../images/bs4.jpg'/class='img-fluid w-100 h-100 col'>
-                </a>
-                  <p class='col'>
-                    &#8369 1500.00
-                    &#8369<s>1800.00</s> 
-                  </p>
-                  <p class='col'>
-                    In Stock
-                  </p>
-                  <p class='col'>
-                    <a class='text-black' href='#'>ADD TO CART</a>
-                  </p>
-              </div>
-              <div class='row my-1'>
-                <a class='col' href='#'>
-                  <img src='../images/bs5.jpg'/class='img-fluid w-100 h-100 col'>
-                </a>
-                  <p class='col'>
-                    &#8369 900.00
-                    &#8369<s>1000.00</s> 
-                  </p>
-                  <p class='col'>
-                    In Stock
-                  </p>
-                  <p class='col'>
-                    <a class='text-black' href='#'>ADD TO CART</a>
-                  </p>
-              </div>
-              "
-              class="nav-link nav-icons" href="#shoppingcart">
+              <a class="nav-link nav-icons" href="#shoppingcart">
                 <i class="fa fa-shopping-cart"><span class="badge rounded-circle translate-middle">3</span></i>
               </a>
             </li>
@@ -224,9 +145,15 @@
     </div>
   </div>
   <!-- end of modals -->
-  <main class="container">
+  <main class="container d-flex justify-content-center">
     <section id="shops-list" class="container my-5 py-5">
-      <h2 class="my-5">List of Flower Shops and Flower Farms Nearby</h2>
+      <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html" class="text-warning">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Nearby Flower Shops and Flower Farms</li>
+        </ol>
+      </div>
+      <h2 class="my-5">Here's the list of Flower Shops and Flower Farms Nearby</h2>
       <div class="card mb-3" style="max-width: 800px;">
         <div class="row g-0">
           <div class="col-md-4">
@@ -239,7 +166,7 @@
               <p class="card-text"><i class="fas fa-phone"></i> +639653430931</p>
               <i class="fas fa-envelope"></i> sereneseeds@gmail.com
               <div>
-                <a class="btn-details"href="#">Details</a>
+                <a class="btn-details" href="../pages/shops/serene-seeds.html">Details</a>
               </div>
             </div>
           </div>
@@ -257,7 +184,7 @@
               <p class="card-text"><i class="fas fa-phone"></i> +639303018511</p>
               <i class="fas fa-envelope"></i> buttercup@hotmail.com
               <div>
-                <a class="btn-details" href="#">Details</a>
+                <a class="btn-details" href="../pages/shops/buttercup-bottoms.html">Details</a>
               </div>
             </div>
           </div>
@@ -275,7 +202,7 @@
               <p class="card-text"><i class="fas fa-phone"></i> +639567839011</p>
               <i class="fas fa-envelope"></i> wildflower@gmail.com
               <div>
-                <a class="btn-details" href="#">Details</a>
+                <a class="btn-details" href="../pages/shops/wildflower-forest.html">Details</a>
               </div>
             </div>
           </div>
@@ -293,7 +220,7 @@
               <p class="card-text"><i class="fas fa-phone"></i> +639238901931</p>
               <i class="fas fa-envelope"></i> stylishsucculent@yahoo.com
               <div>
-                <a class="btn-details" href="#">Details</a>
+                <a class="btn-details" href="../pages/shops/stylish-succulent.html">Details</a>
               </div>
             </div>
           </div>
@@ -311,7 +238,7 @@
               <p class="card-text"><i class="fas fa-phone"></i> +639094872015</p>
               <i class="fas fa-envelope"></i> vines@gmail.com
               <div>
-                <a class="btn-details" href="#">Details</a>
+                <a class="btn-details" href="../pages/shops/vines-and-vases.html">Details</a>
               </div>
             </div>
           </div>
@@ -329,7 +256,7 @@
               <p class="card-text"><i class="fas fa-phone"></i> +639097865451</p>
               <i class="fas fa-envelope"></i> retrogrow@gmail.com
               <div>
-                <a class="btn-details" href="#">Details</a>
+                <a class="btn-details" href="../pages/shops/retro-grow.html">Details</a>
               </div>
             </div>
           </div>

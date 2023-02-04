@@ -1,0 +1,41 @@
+.td-img{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 180px;
+}
+.btn-addtocart{
+  padding: 5px 4px;
+  border: 1px solid #111;
+  transition: .5s;
+  color: #111;
+}
+.btn-addtocart:hover{
+  color: #FF7852;
+  border: 1px solid #FF7852;
+}
+/* .font-align{
+  position: relative;
+  top: 50px
+} */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
+  #text-size{
+    font-size: 13.5px;
+  }
+}
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px){
+  table {width:100%;}
+  thead {display: none;}
+  tr:nth-of-type(2n) {background-color: inherit;}
+  tr td:first-child {background: #f0f0f0; font-weight:bold;font-size:1.3em;}
+  tbody td {display: block;  text-align:center;}
+  tbody td:before { 
+      /* content: attr(data-th);  */
+      display: block;
+      text-align:center;  
+  }
+  #text-size{
+    font-size: 13.5px;
+  }
+}

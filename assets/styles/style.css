@@ -1,7 +1,9 @@
-@import url(fonts/fonts.css);
-@import url(fontawesome-free/css/all.css);
-@import url(styles/index-media-queries.css);
-@import url(styles/shops.css);
+@import url(../fonts/fonts.css);
+@import url(../fontawesome-free/css/all.css);
+@import url(../styles/index-media-queries.css);
+@import url(../styles/shops.css);
+@import url(../styles/wishlist.css);
+@import url(../styles/shop-details.css);
 *{
   /* outline: dotted 1px; */
   font-family: 'Poppins', sans-serif;
@@ -103,7 +105,7 @@ nav{
   color:#F8F9FB;
 }
 #welcome-image{
-  background-image: url('images/evie.jpg');
+  background-image: url('../images/evie.jpg');
   background-size: cover;
   background-position:center;
   height: 500px;
@@ -111,7 +113,7 @@ nav{
   /* border: 1px solid; */
 }
 #shop-nearbyImage{
-  background-image: url('images/mockup-graphics-LtWTbiTtnUk-unsplash.jpg');
+  background-image: url('../images/mockup-graphics-LtWTbiTtnUk-unsplash.jpg');
   background-size: cover;
   background-position:center;
   height: 500px;
@@ -134,42 +136,42 @@ nav{
   border: 2px solid #111;
 }
 #bs-img1{
-  background-image: url('images/bs1.jpg');
+  background-image: url('../images/bs1.jpg');
   background-size: cover;
   background-position: center;
   height: 300px;
   /* width: 450px; */
 }
 #bs-img2{
-  background-image: url('images/bs2.jpg');
+  background-image: url('../images/bs2.jpg');
   background-size: cover;
   background-position: center;
   height: 300px;
   /* width: 415px; */
 }
 #bs-img3{
-  background-image: url('images/bs3.jpg');
+  background-image: url('../images/bs3.jpg');
   background-size: cover;
   background-position: center;
   height: 300px;
   /* width: 415px; */
 }
 #bs-img4{
-  background-image: url('images/bs4.jpg');
+  background-image: url('../images/bs4.jpg');
   background-size: cover;
   background-position: center;
   height: 300px;
   /* width: 415px; */
 }
 #bs-img5{
-  background-image: url('images/bs5.jpg');
+  background-image: url('../images/bs5.jpg');
   background-size: cover;
   background-position: center;
   height: 300px;
   /* width: 450px; */
 }
 #bs-img6{
-  background-image: url('images/bs6.jpg');
+  background-image: url('../images/bs6.jpg');
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -282,6 +284,12 @@ hr.style-eight:after {
  }
  .form-check, #forgot-txt, #sign-options{
  font-size:13px;
+}
+.text-link{
+  text-decoration: none;
+}
+.text-link:hover{
+  text-decoration: underline;
 }
 /* #shopName-txt{
  width: 200px;
