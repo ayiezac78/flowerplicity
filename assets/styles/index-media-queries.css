@@ -69,17 +69,6 @@
   .card-tablet{
     margin: 10px auto;
   }
-  .column{
-    float: left;
-    width: 50%;
-    padding: 10px;
-    font-size: 12px;
-  }
-  .bs-row:after{
-    content:"";
-    display: table;
-    clear: both;
-  }
   .fa-question-circle{
     left: 13px;
   }
@@ -90,7 +79,7 @@
     margin-bottom: 15px;
   }
   .bs-footer{
-    font-size: 7.5px;
+    font-size: 12px;
     font-weight: 600;
   }
 }
