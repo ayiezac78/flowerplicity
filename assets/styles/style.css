@@ -4,6 +4,7 @@
 @import url(../styles/shops.css);
 @import url(../styles/wishlist.css);
 @import url(../styles/shop-details.css);
+@import url(../styles/pre-order.css);
 *{
   /* outline: dotted 1px; */
   font-family: 'Poppins', sans-serif;

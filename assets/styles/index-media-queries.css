@@ -31,6 +31,10 @@
   .custom-popover{
     max-width: 100%;
   }
+  .bs-footer{
+    font-size: 8.5px;
+    font-weight: 600;
+  }
 }
 /* Mobile Viewport */
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
@@ -84,5 +88,9 @@
   }
   #shop-nearbyImage{
     margin-bottom: 15px;
+  }
+  .bs-footer{
+    font-size: 7.5px;
+    font-weight: 600;
   }
 }
