@@ -53,10 +53,10 @@
     position:relative;
   left:70px;
   }
-  .card-body{
+  .shop-cardbody{
     text-align:center;
   }
-  .card{
+  .shop-card{
     padding: 15px;
   }
 }
