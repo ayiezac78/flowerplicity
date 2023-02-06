@@ -50,10 +50,9 @@
 /*     background-color: blue; */
     flex-direction:row;
     position:relative;
-    left: 52px;
+    left: 25px;
     margin:auto 10px;
     width: 250px;
-    font-size: 12px;
   }
   #welcome-row{
     flex-direction:column;
