@@ -99,6 +99,19 @@ nav{
   opacity: 0.5;
   border-radius: 5px;
 }
+.btn-carousel{
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #FF7852;
+  transition: .2s;
+}
+.btn-carousel:hover{
+  color: #111;
+  background-color: #F8F9FB;
+  border: 2px solid #111;
+}
 .nav-icons{
   margin: 10px 10px;
 }
@@ -108,15 +121,17 @@ nav{
 #welcome-image{
   background-image: url('../images/evie.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   background-position:center;
   height: 500px;
   width: 600px;
   /* border: 1px solid; */
 }
 #shop-nearbyImage{
-  background-image: url('../images/mockup-graphics-LtWTbiTtnUk-unsplash.jpg');
+  background-image: url('../images/amy-shamblen-qdPnQuGeuwU-unsplash.jpg');
   background-size: cover;
   background-position:center;
+  background-repeat: no-repeat;
   height: 500px;
   width: 600px;
   border-radius: 5px;
@@ -126,8 +141,6 @@ nav{
   color: whitesmoke;
   border: 2px solid #fff;
   padding: 10px 10px;
-  margin: 20px;
-/*   border-radius: 5px; */
   background-color: #111;
   transition: 0.5s;
 }
@@ -140,6 +153,7 @@ nav{
   background-image: url('../images/bs1.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 300px;
   /* width: 450px; */
 }
@@ -147,6 +161,7 @@ nav{
   background-image: url('../images/bs2.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 300px;
   /* width: 415px; */
 }
@@ -154,6 +169,7 @@ nav{
   background-image: url('../images/bs3.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 300px;
   /* width: 415px; */
 }
@@ -161,6 +177,7 @@ nav{
   background-image: url('../images/bs4.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 300px;
   /* width: 415px; */
 }
@@ -168,6 +185,7 @@ nav{
   background-image: url('../images/bs5.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 300px;
   /* width: 450px; */
 }
@@ -175,6 +193,7 @@ nav{
   background-image: url('../images/bs6.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 300px;
   /* width: 450px; */
 }
