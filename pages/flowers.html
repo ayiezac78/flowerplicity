@@ -22,7 +22,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul id="navMenus" class="navbar-nav mx-auto mx-md-auto mx-sm-auto mb-2 mb-md-2 mb-sm-2 mb-lg-0 mb-md-0 mb-sm-0 justify-content-center col">
             <li class="nav-item">
-              <a class="nav-link active navMenuLink" aria-current="page" href="../index.html">Home</a>
+              <a class="nav-link active border-bottom navMenuLink" aria-current="page" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link navMenuLink" href="../pages/flowers.html">Collections</a>
@@ -150,48 +150,22 @@
         <ol class="carousel-indicators">
           <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
           <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-          <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-          <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="2000">
-            <div class="overlay-image d-block"  style="background-image: url(./images/micheile.jpg);"></div>
-            <div id="carousel-container" class="container container-lg container-md container-sm">
-              <h1>Example</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore soluta accusantium nobis architecto hic dolores magnam animi veritatis, ab vel nulla consectetur sit tenetur fugit! Recusandae odio aspernatur corrupti provident.</p>
-              <!-- <a href="#" class="btn btn-lg btn-primary">
-                Buy
-              </a> -->
+          <div class="carousel-item active" data-bs-interval="5000">
+            <div class="overlay-image d-block"  style="background-image: url(../assets/images/promo-image-banner.jpg);"></div>
+            <div id="carousel-container" class="container container-lg container-md container-sm text-center">
+              <h1>VALENTINE'S SEASON!</h1>
+              <h1 class="fw-bolder">SALE!</h1>
+              <h3 class="fw-bold">FOR ONLY 30% OFFER!</h3>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <div class="overlay-image d-block"  style="background-image: url(./images/yellow.jpg);"></div>
-            <div id="carousel-container" class="container container-lg container-md container-sm">
-              <h1>Example</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore soluta accusantium nobis architecto hic dolores magnam animi veritatis, ab vel nulla consectetur sit tenetur fugit! Recusandae odio aspernatur corrupti provident.</p>
-              <!-- <a href="#" class="btn btn-lg btn-primary">
-                Buy
-              </a> -->
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="5000">
-            <div class="overlay-image d-block"  style="background-image: url(./images/roonz.jpg);"></div>
-            <div id="carousel-container" class="container container-lg container-md container-sm">
-              <h1>Example</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore soluta accusantium nobis architecto hic dolores magnam animi veritatis, ab vel nulla consectetur sit tenetur fugit! Recusandae odio aspernatur corrupti provident.</p>
-              <!-- <a href="#" class="btn btn-lg btn-primary">
-                Buy
-              </a> -->
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="5000">
-            <div class="overlay-image d-block"  style="background-image: url(./images/pawel.jpg);"></div>
-            <div id="carousel-container" class="container container-lg container-md container-sm">
-              <h1>Example</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore soluta accusantium nobis architecto hic dolores magnam animi veritatis, ab vel nulla consectetur sit tenetur fugit! Recusandae odio aspernatur corrupti provident.</p>
-              <!-- <a href="#" class="btn btn-lg btn-primary">
-                Buy
-              </a> -->
+            <div class="overlay-image d-block"  style="background-image: url(../assets/images/micheile.jpg);"></div>
+            <div id="carousel-container" class="container container-lg container-md container-sm text-center">
+              <h1 class="fw-bolder">SALE</h1>
+              <h1 class="fw-bolder">20% OFF</h1>
+              <h4>ON NEW ARRIVALS</h2>
             </div>
           </div>
         </div>
@@ -204,6 +178,258 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </a>
       </div>
+    </section>
+    <section class="my-5 my-md-5 my-sm-5 container">
+      <div class="input-group" id="sTxt-flower">
+        <input type="text" class="form-control" placeholder="Search " aria-label="Text input with segmented dropdown button">
+        <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+        <button type="button" class="btn btn-outline-secondary"><i class="fas fa-search"></i></button>
+          <span class="visually-hidden">Toggle Dropdown</span>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </button>
+      </div>
+      <hr>
+      <div id="row-flower" class="row row-cols-lg-4 row-cols-md-3  container container-lg container-md container-sm m-lg-auto m-md-auto m-sm-auto g-4">
+        <div class="col smFlower-column">
+          <div class="card card-flower">
+            <a href="#"><img id="flower1" class="card-img-top img-fluid img-flower"></a>
+            <div class="card-body cardFlower-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <!-- <div class="card-footer">
+            </div> -->
+          </div>
+        </div>
+        <div class="col smFlower-column">
+          <div class="card card-flower">
+            <a href="#"><img id="flower2" class="card-img-top img-fluid img-flower"></a>
+            <div class="card-body cardFlower-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col smFlower-column">
+          <div class="card card-flower">
+            <a href="#"><img id="flower3" class="card-img-top img-fluid img-flower"></a>
+            <div class="card-body cardFlower-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col smFlower-column">
+          <div class="card card-flower">
+            <a href="#"><img id="flower4" class="card-img-top img-fluid img-flower"></a>
+            <div class="card-body cardFlower-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-flower">
+            <a href="#"><img id="flower5" class="card-img-top img-fluid img-flower"></a>
+            <div class="card-body cardFlower-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-flower">
+            <a href="#"><img id="flower6" class="card-img-top img-fluid img-flower"></a>
+            <div class="card-body cardFlower-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-flower">
+            <a href="#"><img id="flower7" class="card-img-top img-fluid img-flower"></a>
+            <div class="card-body cardFlower-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-flower">
+            <a href="#"><img id="flower8" class="card-img-top img-fluid img-flower"></a>
+            <div class="card-body cardFlower-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-flower">
+            <a href="#"><img id="flower9" class="card-img-top img-fluid img-flower"></a>
+            <div class="card-body cardFlower-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-flower">
+            <a href="#"><img id="flower10" class="card-img-top img-fluid img-flower"></a>
+            <div class="card-body cardFlower-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-flower">
+            <a href="#"><img id="flower11" class="card-img-top img-fluid img-flower"></a>
+            <div class="card-body cardFlower-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-flower">
+            <a href="#"><img id="flower12" class="card-img-top img-fluid img-flower"></a>
+            <div class="card-body cardFlower-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-</body>
+   <!-- Footer -->
+   <footer class="text-center text-lg-start bg-white text-muted mt-3">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="#" class="me-4 link-secondary text-decoration-none">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="me-4 link-secondary text-decoration-none">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="me-4 link-secondary text-decoration-none">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="me-4 link-secondary text-decoration-none">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-sun me-3 text-secondary"></i><b>FLOWER</b>PLICITY
+            </h6>
+            <div class="mb-3">
+              <h6>SIMPLY. EASY. HASSLE FREE.</h6>
+            </div>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Content
+            </h6>
+            <p>
+              <a href="index.html" class="text-reset">Home</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Collections</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Blogs</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Gift Ideas</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">About Us</a>
+            </p>
+            <p>
+              <a href="pages/shops.html" class="text-reset">Shop Near Me</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i> Bacolod City, Negros Occidental 6100, PH</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              flowerplicity@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> +639659051766</p>
+            <!-- <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p> -->
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      <p>coded by Ariel Maniago & Rosie Conde</p>
+      © 2023
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  </body>
+  <script>
+    // Tooltips
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+  const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+  const popover = new bootstrap.Popover('.example-popover', {
+    container: 'body'
+  })
+  </script>
 </html>

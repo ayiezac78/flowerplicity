@@ -22,7 +22,7 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul id="navMenus" class="navbar-nav mx-auto mx-md-auto mx-sm-auto mb-2 mb-md-2 mb-sm-2 mb-lg-0 mb-md-0 mb-sm-0 justify-content-center col">
               <li class="nav-item">
-                <a class="nav-link active navMenuLink" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active border-bottom navMenuLink" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link navMenuLink" href="./pages/flowers.html">Collections</a>
@@ -31,7 +31,7 @@
                 <a class="nav-link navMenuLink" href="#">Gift Ideas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navMenuLink" href="#">Blogs</a>
+                <a class="nav-link navMenuLink" href="./pages/blogs.html">Blogs</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link navMenuLink" href="#">About Us</a>
@@ -51,10 +51,6 @@
               <li class="nav-item">
                 <a class="nav-link nav-icons" href="#shoppingcart">
                   <i class="fa fa-shopping-cart"><span class="badge rounded-circle translate-middle">3</span></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a id="btn-signup" class="nav-link" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sign in <i class="fas fa-sign-in-alt"></i>
                 </a>
               </li>
             </ul>
@@ -88,11 +84,11 @@
     <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header bg-success bg-opacity-50">
             <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Welcome to <b>Flower</b>plicity</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body modalbg-sign">
             <!-- Show a second modal and hide this one with the button below. -->
             <form>
               <div class="row">
@@ -192,22 +188,24 @@
       <section class="container container-md container-sm mt-1 mt-md-1 mt-sm-1">
         <div id="welcome-row" class="row bg-light container-md p-3 m-auto">
           <div class="col col-md col-sm" id="div-welcomeImg">
-            <img id="welcome-image" class="img-fluid rounded border-0" alt="">
+            <img id="welcome-image" class="img-fluid rounded shadow" alt="">
           </div>
           <div class="welcome-text col col-md col-sm m-auto m-md-auto m-sm-auto container mt-1">
             <h1>Welcome to <span id="boldText">Flower</span>plicity</h1>
             <h5><p>Simply. Easy. Hassle Free.</p></h5>
+            <a id="btn-signup" data-bs-toggle="modal" href="#exampleModalToggle">SIGN IN <i class="fas fa-sign-in-alt"></i>
+            </a>
           </div>
         </div>
       </section>
-      <section class="container container-md container-sm mt-0 mt-md-0 mt-sm-0">
+      <section class="container container-md container-sm mt-1 mt-md-1 mt-sm-1">
         <div id="shopnearby-row" class="row bg-secondary bg-opacity-10 container-md p-3 m-auto">
           <div id="btnshop-text" class="welcome-text col col-md col-sm m-auto container">
             <h1 class="fw-bold">ONE STOP SHOPPING FOR ALL OF YOUR FLORAL NEEDS</h1>
             <a id="btnshop-nearby" href="./pages/shops.html" class="my-2">SHOPS NEARBY <i class="fas fa-long-arrow-alt-right"></i></a>
           </div>
           <div class="col col-sm col-md" id="div-welcomeImg">
-            <img id="shop-nearbyImage" class="img-fluid" alt="">
+            <img id="shop-nearbyImage" class="img-fluid rounded shadow" alt="">
           </div>
         </div>
       </section>
@@ -216,8 +214,8 @@
         <hr class="style-eight">
         <div class="bs-row row row-cols-1 row-cols-md-3 row-cols-sm-1 row-cols-md-3 g-4">
           <div class="col column">
-            <div class="card w-100 h-100">
-              <img id="bs-img1" class="card-img-top">
+            <div class="card-hover card w-100 h-100">
+              <a href="#"><img id="bs-img1" class="card-img-top"></a>
               <div class="card-body">
                 <div class="d-flex justify-content-between">
                   <a href="#" class=" card-link link-dark text-link fw-bold">White Flower</a>
@@ -232,8 +230,8 @@
             </div>
           </div>
           <div class="col column">
-            <div class="card w-100 h-100">
-              <img id="bs-img2" class="card-img-top" alt="">
+            <div class="card-hover card w-100 h-100">
+              <a href="#"><img id="bs-img2" class="card-img-top" alt=""></a>
               <div class="card-body">
                 <div class="d-flex justify-content-between">
                   <a href="#" class="card-link link-dark text-link fw-bold">Lavender</a>
@@ -248,8 +246,8 @@
             </div>
           </div>
           <div class="col column">
-            <div class="card w-100 h-100">
-              <img id="bs-img3" class="card-img-top" alt="">
+            <div class="card-hover card w-100 h-100">
+              <a href="#"><img id="bs-img3" class="card-img-top" alt=""></a>
               <div class="card-body">
                 <div class="d-flex justify-content-between">
                   <a href="#" class="card-link link-dark text-link fw-bold">Pink Rose</a>
@@ -264,8 +262,8 @@
             </div>
           </div>
           <div class="col column">
-            <div class="card w-100 h-100">
-              <img id="bs-img4" class="card-img-top" alt="">
+            <div class="card-hover card w-100 h-100">
+              <a href="#"><img id="bs-img4" class="card-img-top" alt=""></a>
               <div class="card-body">
                 <div class="d-flex justify-content-between">
                   <a href="#" class="card-link link-dark text-link fw-bold">Pale Red Flower</a>
@@ -280,8 +278,8 @@
             </div>
           </div>
           <div class="col column">
-            <div class="card w-100 h-100">
-              <img id="bs-img5" class="card-img-top" alt="">
+            <div class="card-hover card w-100 h-100">
+              <a href="#"><img id="bs-img5" class="card-img-top" alt=""></a>
               <div class="card-body">
                 <div class="d-flex justify-content-between">
                   <a href="#" class="card-link link-dark text-link fw-bold">Cauli White Flower</a>
@@ -296,8 +294,8 @@
             </div>
           </div>
           <div class="col column">
-            <div class="card w-100 h-100">
-              <img id="bs-img6" class="card-img-top" alt="">
+            <div class="card-hover card w-100 h-100">
+              <a href="#"><img id="bs-img6" class="card-img-top" alt=""></a>
               <div class="card-body">
                 <div class="d-flex justify-content-between">
                   <a href="#" class="card-link link-dark text-link fw-bold">Bouquet of Roses</a>
@@ -403,12 +401,8 @@
           <h6 class="text-uppercase fw-bold mb-4">
             <i class="fas fa-sun me-3 text-secondary"></i><b>FLOWER</b>PLICITY
           </h6>
-          <p>
-            Sign up for our newsletter
-          </p>
-          <div class="input-group mb-3">
-            <input type="email" class="form-control" placeholder="Email address" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe</button>
+          <div class="mb-3">
+            <h6>SIMPLY. EASY. HASSLE FREE.</h6>
           </div>
         </div>
         <!-- Grid column -->
@@ -420,10 +414,10 @@
             Content
           </h6>
           <p>
-            <a href="#!" class="text-reset">Home</a>
+            <a href="index.html" class="text-reset">Home</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Flowers</a>
+            <a href="#!" class="text-reset">Collections</a>
           </p>
           <p>
             <a href="#!" class="text-reset">Blogs</a>
@@ -435,7 +429,7 @@
             <a href="#!" class="text-reset">About Us</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Shop Near Me</a>
+            <a href="pages/shops.html" class="text-reset">Shop Near Me</a>
           </p>
         </div>
         <!-- Grid column -->
