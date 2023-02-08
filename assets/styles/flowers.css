@@ -1,0 +1,78 @@
+#sTxt-flower{
+  width: 300px;
+/*   left: 995px; */
+/*   margin: auto; */
+  margin-left: auto;
+}
+.card-flower{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.card-flower:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.img-flower{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* width: 200px; */
+  height: 200px;
+}
+.cardFlower-body{
+  padding: 12px 16px;
+}
+#flower1{
+  background-image: url('../images/bs1.jpg');
+}
+#flower2{
+  background-image: url('../images/bs2.jpg');
+}
+#flower3{
+  background-image: url('../images/bs3.jpg');
+}
+#flower4{
+  background-image: url('../images/bs4.jpg');
+}
+#flower5{
+  background-image: url('../images/bs5.jpg');
+}
+#flower6{
+  background-image: url('../images/bs6.jpg');
+}
+#flower7{
+  background-image: url('../images/cf1.jpg');
+}
+#flower8{
+  background-image: url('../images/cf2.jpg');
+}
+#flower9{
+  background-image: url('../images/cs1.jpg');
+}
+#flower10{
+  background-image: url('../images/cf3.jpg');
+}
+#flower11{
+  background-image: url('../images/cs3.jpg');
+}
+#flower12{
+  background-image: url('../images/cs4.jpg');
+}
+/* Tablet Viewport */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
+ #sTxt-flower{
+/*    left: 420px; */
+   margin-left: auto;
+ }
+}
+/* Mobile Viewport */
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px){
+  #sTxt-flower{
+   margin-left:auto;
+ }
+ #row-flower{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  margin:auto;
+  row-gap: 10px;
+ }
+}
