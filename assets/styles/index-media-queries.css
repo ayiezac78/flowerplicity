@@ -81,4 +81,8 @@
     font-size: 12px;
     font-weight: 600;
   }
+  .navMenuLink{
+    width: 20%;
+    margin:auto;
+   }
 }
