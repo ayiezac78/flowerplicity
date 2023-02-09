@@ -50,7 +50,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link nav-icons" href="#">
-                <i class="fa fa-shopping-cart"><span class="badge rounded-circle translate-middle">5</span></i>
+                <i class="fa fa-shopping-basket"><span class="badge rounded-circle translate-middle">3</span></i>
               </a>
             </li>
             <li class="nav-item">
@@ -64,85 +64,85 @@
     </div>
   </nav>
   <!-- end of navs -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header bg-success bg-opacity-50">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Search</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="input-group mb-3">
-            <input type="text" class="form-control border-success border-opacity-25" placeholder="I am looking for a  flower shop near me..." aria-label="Search" aria-describedby="button-addon2">
-            <a href="#" class="btn btn-outline-success" type="button" id="button-addon2"><i class="fas fa-search"></i></a>
+    <!-- Modal -- Search -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-success bg-opacity-50">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Search</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control border-success border-opacity-25" placeholder="Search Flower" aria-label="Search" aria-describedby="button-addon2">
+              <a href="#" class="btn btn-outline-success" type="button" id="button-addon2"><i class="fas fa-search"></i></a>
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
         </div>
-        <!-- <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div> -->
       </div>
     </div>
-  </div>
-  <!-- Sign up form modal -->
-  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Welcome to <b>Flower</b>plicity</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Show a second modal and hide this one with the button below. -->
-          <form>
-            <div class="row">
-              <div class="form col-md-6">
-                <input class="input" placeholder="Email address" required="" type="email">
-                <span class="input-border"></span>
-              </div>
-              <div class="form col-md-6">
-                <input class="input" placeholder="Password" required="" type="password">
-                <span class="input-border"></span>
-              </div>
-              <div class="row mt-4">
-                <div class="col d-flex justify-content-start">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckCheck" checked>
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Remember me
-                    </label>
+    <!-- Sign up form modal -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-success bg-opacity-50">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Welcome to <b>Flower</b>plicity</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body modalbg-sign">
+            <!-- Show a second modal and hide this one with the button below. -->
+            <form>
+              <div class="row">
+                <div class="form col-md-6">
+                  <input class="input" placeholder="Email address" required="" type="email">
+                  <span class="input-border"></span>
+                </div>
+                <div class="form col-md-6">
+                  <input class="input" placeholder="Password" required="" type="password">
+                  <span class="input-border"></span>
+                </div>
+                <div class="row mt-4">
+                  <div class="col d-flex justify-content-start">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckCheck" checked>
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                  <div id="forgot-txt" class="col">
+                    <!-- Simple link -->
+                    <a href="#!">Forgot password?</a>
                   </div>
                 </div>
-                <div id="forgot-txt" class="col">
-                  <!-- Simple link -->
-                  <a href="#!">Forgot password?</a>
-                </div>
               </div>
+              <a href="./pages/user.html" class="btn-sm btn btn-success mt-2 ">SIGN IN</a>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <div class="row">
+              <div class="col">
+                <p id="sign-options" class="m-auto">
+                  Sign in or sign up with:
+                  <a href="#"><i class="fab fa-facebook-f ps-2"></i></a>
+                  <a href="#"><i class="fab fa-google text-danger ps-2"></i></a>
+                  <a href="#"><i class="fab fa-twitter ps-2 text-primary"></i></a>
+                </p>
+              </div>
+              <!-- <div id="regQ-txt" class="col">
+                <p>Are you a flower shop owner or a local flower grower?
+                  <a href="#">Register Here</a>
+                </p>
+              </div> -->
             </div>
-            <a href="pages/user.html" class="btn-sm btn btn-success mt-2 ">SIGN IN</a>
-          </form>
-        </div>
-        <div class="modal-footer justify-content-between">
-          <div class="row">
-            <div class="col">
-              <p id="sign-options" class="m-auto">
-                Sign in or sign up with:
-                <a href="#"><i class="fab fa-facebook-f ps-2"></i></a>
-                <a href="#"><i class="fab fa-google text-danger ps-2"></i></a>
-                <a href="#"><i class="fab fa-twitter ps-2 text-primary"></i></a>
-              </p>
-            </div>
-            <!-- <div id="regQ-txt" class="col">
-              <p>Are you a flower shop owner or a local flower grower?
-                <a href="#">Register Here</a>
-              </p>
-            </div> -->
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- end of modal -->
   <main>
     <!-- Carousel -->
     <section class="container container-md container-sm container-lg">
@@ -199,21 +199,49 @@
           <div class="card card-flower">
             <a href="#"><img id="flower1" class="card-img-top img-fluid img-flower"></a>
             <div class="card-body cardFlower-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title"><a href="#" class="text-dark cardTitle-link">White Flower</a></h5>
+              <div class="row">
+                <div class="col">
+                  <ul class="list-inline">
+                    <li class="list-inline-item fw-semibold"><small><s>&#8369 2000</s> &#8369 1000</small></li>
+                    <li class="float-lg-end list-inline-item text-danger text-opacity-75 fw-bolder"><small>Serene Seeds</small></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <!-- <div class="card-footer">
-            </div> -->
+            <div class="card-footer">
+              <div class="row">
+                <div class="col">
+                  <a href="#"><i class="fas fa-shopping-basket me-1 collections-icons"></i></a>
+                  <a href="#"><i class="far fa-heart collections-icons me-1"></i></a>
+                  <a href="#" class="float-lg-end float-md-end btn-buy">BUY</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col smFlower-column">
           <div class="card card-flower">
             <a href="#"><img id="flower2" class="card-img-top img-fluid img-flower"></a>
             <div class="card-body cardFlower-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title"><a href="#" class="text-dark cardTitle-link">Blue Sunny</a></h5>
+              <div class="row">
+                <div class="col">
+                  <ul class="list-inline">
+                    <li class="list-inline-item fw-semibold"><small><s>&#8369 2000</s> &#8369 1200</small></li>
+                    <li class="float-lg-end float-md-start list-inline-item text-danger text-opacity-75 fw-bolder"><small>Buttercup Blossoms</small></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col">
+                  <a href="#"><i class="fas fa-shopping-basket me-1 collections-icons"></i></a>
+                  <a href="#"><i class="far fa-heart collections-icons"></i></a>
+                  <a href="#" class="float-lg-end float-md-end btn-buy">BUY</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -221,9 +249,24 @@
           <div class="card card-flower">
             <a href="#"><img id="flower3" class="card-img-top img-fluid img-flower"></a>
             <div class="card-body cardFlower-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title"><a href="#" class="text-dark cardTitle-link">Heavenly Roses</a></h5>
+              <div class="row">
+                <div class="col">
+                  <ul class="list-inline">
+                    <li class="list-inline-item fw-semibold"><small><s>&#8369 2000</s> &#8369 1600</small></li>
+                    <li class="float-lg-end list-inline-item text-danger text-opacity-75 fw-bolder"><small>The Stylish Succulent</small></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col">
+                  <a href="#"><i class="fas fa-shopping-basket me-1 collections-icons"></i></a>
+                  <a href="#"><i class="far fa-heart collections-icons"></i></a>
+                  <a href="#" class="float-lg-end float-md-end btn-buy">BUY</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -231,9 +274,22 @@
           <div class="card card-flower">
             <a href="#"><img id="flower4" class="card-img-top img-fluid img-flower"></a>
             <div class="card-body cardFlower-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title"><a href="#" class="text-dark cardTitle-link">Pale Red Flower</a></h5>
+              <div class="row">
+                <ul class="list-inline">
+                  <li class="list-inline-item fw-semibold"><small><s>&#8369 1800</s> &#8369 1500</small></li>
+                  <li class="float-lg-end list-inline-item text-danger text-opacity-75 fw-bolder"><small>Vines & Vases Flower Farm</small></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col">
+                  <a href="#"><i class="fas fa-shopping-basket me-1 collections-icons"></i></a>
+                  <a href="#"><i class="far fa-heart collections-icons"></i></a>
+                  <a href="#" class="float-lg-end float-md-end btn-buy">BUY</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -241,9 +297,22 @@
           <div class="card card-flower">
             <a href="#"><img id="flower5" class="card-img-top img-fluid img-flower"></a>
             <div class="card-body cardFlower-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title"><a href="#" class="text-dark cardTitle-link">Pearl Thyme</a></h5>
+              <div class="row">
+                <ul class="list-inline">
+                  <li class="list-inline-item fw-semibold"><small><s>&#8369 1900</s> &#8369 1300</small></li>
+                  <li class="float-lg-end list-inline-item text-danger text-opacity-75 fw-bolder"><small>Happy Flower Co.</small></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col">
+                  <a href="#"><i class="fas fa-shopping-basket me-1 collections-icons"></i></a>
+                  <a href="#"><i class="far fa-heart collections-icons"></i></a>
+                  <a href="#" class="float-lg-end float-md-end btn-buy">BUY</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -251,9 +320,25 @@
           <div class="card card-flower">
             <a href="#"><img id="flower6" class="card-img-top img-fluid img-flower"></a>
             <div class="card-body cardFlower-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <span class="new-arrivals">New Arrivals</span>
+              <h5 class="card-title"><a href="#" class="text-dark cardTitle-link">Magmatic Red Rose</a></h5>
+              <div class="row">
+                <div class="col">
+                  <ul class="list-inline">
+                    <li class="list-inline-item fw-semibold"><small><s>&#8369 2000</s> &#8369 1600</small></li>
+                    <li class="float-lg-end list-inline-item text-danger text-opacity-75 fw-bolder"><small>The Wild Rose</small></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col">
+                  <a href="#"><i class="fas fa-shopping-basket me-1 collections-icons"></i></a>
+                  <a href="#"><i class="far fa-heart collections-icons"></i></a>
+                  <a href="#" class="float-lg-end float-md-end btn-buy">BUY</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -261,9 +346,24 @@
           <div class="card card-flower">
             <a href="#"><img id="flower7" class="card-img-top img-fluid img-flower"></a>
             <div class="card-body cardFlower-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title"><a href="#" class="text-dark cardTitle-link">Solisbulbus</a></h5>
+              <div class="row">
+                <div class="col">
+                  <ul class="list-inline">
+                    <li class="list-inline-item fw-semibold"><small><s>&#8369 1200</s> &#8369 900</small></li>
+                    <li class="float-lg-end list-inline-item text-danger text-opacity-75 fw-bolder"><small>Curious Carnations Farm</small></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col">
+                  <a href="#"><i class="fas fa-shopping-basket me-1 collections-icons"></i></a>
+                  <a href="#"><i class="far fa-heart collections-icons"></i></a>
+                  <a href="#" class="float-lg-end float-md-end btn-buy">BUY</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -271,9 +371,24 @@
           <div class="card card-flower">
             <a href="#"><img id="flower8" class="card-img-top img-fluid img-flower"></a>
             <div class="card-body cardFlower-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title"><a href="#" class="text-dark cardTitle-link">Sparkling Sun Flower</a></h5>
+              <div class="row">
+                <div class="col">
+                  <ul class="list-inline">
+                    <li class="list-inline-item fw-semibold"><small><s>&#8369 2000</s> &#8369 1000</small></li>
+                    <li class="float-lg-end list-inline-item text-danger text-opacity-75 fw-bolder"><small>Avant Flower Farm</small></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col">
+                  <a href="#"><i class="fas fa-shopping-basket me-1 collections-icons"></i></a>
+                  <a href="#"><i class="far fa-heart collections-icons"></i></a>
+                  <a href="#" class="float-lg-end float-md-end btn-buy">BUY</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -281,9 +396,24 @@
           <div class="card card-flower">
             <a href="#"><img id="flower9" class="card-img-top img-fluid img-flower"></a>
             <div class="card-body cardFlower-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title"><a href="#" class="text-dark cardTitle-link">Malevolent Flower</a></h5>
+              <div class="row">
+                <div class="col">
+                  <ul class="list-inline">
+                    <li class="list-inline-item fw-semibold"><small><s>&#8369 2000</s> &#8369 1000</small></li>
+                    <li class="float-lg-end list-inline-item text-danger text-opacity-75 fw-bolder"><small>SweetPea Floral Shop</small></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col">
+                  <a href="#"><i class="fas fa-shopping-basket me-1 collections-icons"></i></a>
+                  <a href="#"><i class="far fa-heart collections-icons"></i></a>
+                  <a href="#" class="float-lg-end float-md-end btn-buy">BUY</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -291,9 +421,24 @@
           <div class="card card-flower">
             <a href="#"><img id="flower10" class="card-img-top img-fluid img-flower"></a>
             <div class="card-body cardFlower-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title"><a href="#" class="text-dark cardTitle-link">Purple Hook</a></h5>
+              <div class="row">
+                <div class="col">
+                  <ul class="list-inline">
+                    <li class="list-inline-item fw-semibold"><small><s>&#8369 2000</s> &#8369 1000</small></li>
+                    <li class="float-lg-end list-inline-item text-danger text-opacity-75 fw-bolder"><small>Wildflower Forest Farm</small></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col">
+                  <a href="#"><i class="fas fa-shopping-basket me-1 collections-icons"></i></a>
+                  <a href="#"><i class="far fa-heart collections-icons"></i></a>
+                  <a href="#" class="float-lg-end float-md-end btn-buy">BUY</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -301,9 +446,24 @@
           <div class="card card-flower">
             <a href="#"><img id="flower11" class="card-img-top img-fluid img-flower"></a>
             <div class="card-body cardFlower-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title"><a href="#" class="text-dark cardTitle-link">Pink Rose</a></h5>
+              <div class="row">
+                <div class="col">
+                  <ul class="list-inline">
+                    <li class="list-inline-item fw-semibold"><small><s>&#8369 2200</s> &#8369 1900</small></li>
+                    <li class="float-lg-end list-inline-item text-danger text-opacity-75 fw-bolder"><small>Retro Grow Flower Shop</small></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col">
+                  <a href="#"><i class="fas fa-shopping-basket me-1 collections-icons"></i></a>
+                  <a href="#"><i class="far fa-heart collections-icons"></i></a>
+                  <a href="#" class="float-lg-end float-md-end btn-buy">BUY</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -311,9 +471,24 @@
           <div class="card card-flower">
             <a href="#"><img id="flower12" class="card-img-top img-fluid img-flower"></a>
             <div class="card-body cardFlower-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title"><a href="#" class="text-dark cardTitle-link">The Redmagic</a></h5>
+              <div class="row">
+                <div class="col">
+                  <ul class="list-inline">
+                    <li class="list-inline-item fw-semibold"><small><s>&#8369 2000</s> &#8369 1000</small></li>
+                    <li class="float-lg-end list-inline-item text-danger text-opacity-75 fw-bolder"><small>The Stylish Succulent</small></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col">
+                  <a href="#"><i class="fas fa-shopping-basket me-1 collections-icons"></i></a>
+                  <a href="#"><i class="far fa-heart collections-icons"></i></a>
+                  <a href="#" class="float-end float-md-end btn-buy">BUY</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
