@@ -31,9 +31,8 @@
   .custom-popover{
     max-width: 100%;
   }
-  .bs-footer{
-    font-size: 8.5px;
-    font-weight: 600;
+  .column{
+    font-size: 14px;
   }
 }
 /* Mobile Viewport */
@@ -79,10 +78,28 @@
   }
   .bs-footer{
     font-size: 12px;
-    font-weight: 600;
+    /* height: 50px */
+/*     font-weight: 600;
+    text-align:center; */
+  }
+  .card-body{
+    height: 60px;
   }
   .navMenuLink{
     width: 20%;
     margin:auto;
    }
+  .bs-row{
+    display:flex;
+  }
+  .column{
+    flex-direction:row;
+    width: 50%;
+    float:left;
+    font-size: 12px;
+  }
+  /* .store-name{
+    position:relative;
+    right: 69px;
+  } */
 }
