@@ -1,0 +1,50 @@
+.btn-prodMagma{
+  text-decoration:none;
+  padding: 10px 10px;
+  border: 2px solid #111;
+  color: #111;
+  margin: 3px auto;
+  position: relative;
+  top: 20px;
+}
+.btn-prodMagma:hover{
+  background-color: #111;
+  color: #fff;
+}
+#prod-infoMagma{
+  padding: 23px;
+}
+.promoFeb-ibig{
+  position:absolute;
+  background-color:#FF7852;
+  margin: 5px auto;
+  padding: 3px;
+  border-radius: 1px;
+  height: 50px;
+ }
+/* Tablet Viewport */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
+ #prod-infoMagma{
+   padding: 10px;
+   font-size: 12px;
+ }
+  .btn-prodMagma{
+    padding: 5px;
+    width: 90%;
+   position:relative;
+   top: 0px;
+  }
+ #magmaF-img{
+  height: 300px;
+ }
+}
+/* Mobile Viewport */
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px){
+ #prod-infoMagma{
+   max-width: 402px;
+   margin:auto;
+   margin-top: 5px;
+  font-size: 12px;
+  height: 330px;
+ }
+}
