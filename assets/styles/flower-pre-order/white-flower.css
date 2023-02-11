@@ -1,0 +1,67 @@
+.btn-prodWhite{
+  text-decoration:none;
+  padding: 10px 10px;
+  border: 2px solid #111;
+  color: #111;
+  margin: 3px auto;
+  position:relative;
+  top: 120px;
+}
+.btn-prodWhite:hover{
+  background-color: #111;
+  color: #fff;
+}
+#img-wFlower{
+ height: 500px;
+ width: 500px;
+ float:right;
+}
+#prod-infoWhite{
+  padding: 23px;
+}
+.promo-newArrivals{
+  position:absolute;
+  background-color:#FECF67;
+  margin: 5px auto;
+  padding: 3px;
+  border-radius: 1px;
+  height: 50px;
+ }
+/* Tablet Viewport */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
+ #prod-infoWhite{
+   padding: 10px;
+   font-size: 12px;
+ }
+  .btn-prodWhite{
+    padding: 5px;
+    width: 90%;
+   position:relative;
+   top:0;
+  }
+ #img-wFlower{
+  height: 300px;
+  width:300px;
+ }
+}
+/* Mobile Viewport */
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px){
+ #prod-infoWhite{
+   max-width: 402px;
+   margin:0px auto;
+  font-size: 12px;
+  /* position:relative;
+  top: 10px; */
+ }
+ #img-wFlower{
+  height:400px;
+ }
+ .btn-prodWhite{
+  position:relative;
+  top:0;
+ }
+ #wft{
+  position:relative;
+  top:5px
+ }
+}

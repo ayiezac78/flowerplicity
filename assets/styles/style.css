@@ -1,11 +1,4 @@
-@import url(../fonts/fonts.css);
-@import url(../fontawesome-free/css/all.css);
-@import url(../styles/index-media-queries.css);
-@import url(../styles/shops.css);
-@import url(../styles/wishlist.css);
-@import url(../styles/shop-details.css);
-@import url(../styles/pre-order.css);
-@import url(../styles/flowers.css);
+@import url(../styles/css-import.css);
 *{
   /* outline: dotted 1px; */
   font-family: 'Poppins', sans-serif;

@@ -42,6 +42,10 @@
     right:20px;
     margin:auto;
   }
+  .icons-index{
+    position:relative;
+    left: 110px;
+  }
   #navMenus{
     text-align: center;
   }
