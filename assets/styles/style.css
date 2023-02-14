@@ -6,6 +6,9 @@
 body{
   background-color: whitesmoke;
 }
+#signinOwner{
+  display: none;;
+}
 nav{
   background-color: #79C0AD;
 }
@@ -28,9 +31,6 @@ nav{
  /* border-style: dashed; */
  background-color: #353b40;
 }
-#boldText{
-  font-weight: bolder;
-}
 .navMenuLink {
   font-size: 13px;
   color: #111;
@@ -45,12 +45,10 @@ nav{
   transition-duration: 400ms;
   transition-property: color;
 }
-
 .navMenuLink:focus,
 .navMenuLink:hover {
   color: #F8F9FB;
 }
-
 .navMenuLink:focus:after,
 .navMenuLink:hover:after {
   width: 100%;
@@ -117,8 +115,8 @@ nav{
   color:#F8F9FB;
 }
 #welcome-image{
-  background-image: url('../images/evie.jpg');
-  background-size: cover;
+  background-image: url('../images/flower-welcomeimg.svg');
+  background-size: contain;
   background-repeat: no-repeat;
   background-position:center;
   height: 500px;
@@ -126,8 +124,8 @@ nav{
   /* border: 1px solid; */
 }
 #shop-nearbyImage{
-  background-image: url('../images/amy-shamblen-qdPnQuGeuwU-unsplash.jpg');
-  background-size: cover;
+  background-image: url('../images/undraw_blooming_re_2kc4.svg');
+  background-size: contain;
   background-position:center;
   background-repeat: no-repeat;
   height: 500px;
@@ -138,7 +136,7 @@ nav{
   text-decoration: none;
   color: #111;
   border: 2px solid #353b40;
-  padding: 10px 10px;
+  padding: 4px 5px;
   transition: 0.3s;
 }
 #btnshop-nearby:hover{
@@ -262,7 +260,6 @@ hr.style-eight:after {
  input:hover {
   background: var(--input-hovered-color);
  }
- 
  input:focus {
   outline: none;
  }
@@ -315,6 +312,12 @@ hr.style-eight:after {
 .text-link:hover{
   text-decoration: underline;
 }
+#regQ-txt a{
+  text-decoration: none;
+  position: relative;
+  left: 170px;
+  margin:auto;
+ }
 /* #shopName-txt{
  width: 200px;
 }

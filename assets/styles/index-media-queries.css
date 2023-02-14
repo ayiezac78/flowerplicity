@@ -13,17 +13,19 @@
   .div-bsimg{
     margin: 10px auto;
   }
-  #bgshop-nearby{
-    display: none;
+  #shopnearby-row{
+    display: flex;
+    flex-direction:column-reverse;
   }
   span.badge{
     position:relative;
-    bottom: 18px;
     font-size: 8px;
-    left: 15px;
+    bottom: 15px;
+    left: 18px;
   }
   #btn-signup{
-    width: 83px;
+    width: 85px;
+    font-size: 12px;
   }
   .card-footer{
     font-size: 12px;
@@ -42,15 +44,10 @@
     right:20px;
     margin:auto;
   }
-  .icons-index{
-    position:relative;
-    left: 110px;
-  }
   #navMenus{
     text-align: center;
   }
   #rightNav{
-/*     background-color: blue; */
     flex-direction:row;
     position:relative;
     left: 25px;
@@ -82,9 +79,6 @@
   }
   .bs-footer{
     font-size: 12px;
-    /* height: 50px */
-/*     font-weight: 600;
-    text-align:center; */
   }
   .card-body{
     height: 60px;
@@ -102,8 +96,4 @@
     float:left;
     font-size: 12px;
   }
-  /* .store-name{
-    position:relative;
-    right: 69px;
-  } */
 }

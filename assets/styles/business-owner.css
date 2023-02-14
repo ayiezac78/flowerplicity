@@ -1,0 +1,116 @@
+#user-img{
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 40px;
+  width: 40px;
+}
+#userA-img{
+  background-position:center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 200px;
+  width:200px;
+  margin:10px auto;
+}
+#user-card{
+	width: 224px;
+}
+#business-img{
+	background-size:cover;
+	background-repeat:no-repeat;
+	width:100px;
+	height:100px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.nav-pills a.nav-link {
+	padding: 10px 20px;
+	border-bottom: 1px solid #ddd;
+	border-radius: 0;
+	color: #333;
+}
+.nav-pills a.nav-link i {
+	width: 20px;
+}
+.form-group {
+	margin-bottom: 1.5rem;
+}
+.order-img{
+  background-image: url('../images/order-reminder.svg');
+	background-size:contain;
+	background-repeat:no-repeat;
+	height: 250px;
+	width: 200px;
+}
+.tab-content{
+	flex:1;
+}
+.collection-btn{
+	text-decoration:none;
+	position:relative;
+	left: 388px;
+	border: 2px solid #111;
+	border-style:dashed;
+	color: #111;
+	padding: 4px;
+}
+.collection-btn:hover{
+	border-style:dashed;
+	color:#111;
+	background-color: #FECF67;
+}
+.toast{
+	position: fixed;
+	top: 100px;
+	right: 123px;
+	width: 120px;
+	background-color: #FECF67;
+}
+/* Tablet Viewport */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
+	#myTab li{
+		font-size: 14px;
+	}
+	.collection-btn{
+		position:relative;
+		left:97px;
+		padding: 2px;
+		font-size:14px;
+	}
+	.toast{
+		right:40px;
+	}
+}
+/* Mobile Viewport */
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px){
+	#user-div{
+		display:block;
+		margin:auto;
+	}
+	#user-card{
+		margin:auto;
+		text-align:center;
+	}
+	#userA-img{
+		height:150px;
+		width:150px;
+	}
+	#myTab li{
+		font-size: 14px;
+	}
+	.collection-btn{
+		position:relative;
+		left:54px;
+	}
+	.toast{
+		right:15px;
+	}
+}

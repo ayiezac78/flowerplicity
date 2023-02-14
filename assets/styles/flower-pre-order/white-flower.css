@@ -14,6 +14,7 @@
 #img-wFlower{
  height: 500px;
  width: 500px;
+ object-fit: cover;
  float:right;
 }
 #prod-infoWhite{
