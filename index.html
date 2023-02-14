@@ -8,7 +8,10 @@
   <link rel="stylesheet" href="assets/styles/style.css">
   <link rel="icon" href="assets/images/flowerplicity-website-favicon-white.png" type="image/png" sizes="16x16">
   <title>Flowerplicity</title>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
   <script src="assets/js/bootstrap.bundle.js"></script>
+  <script src="./assets/custom-js/signin-choice.js"></script>
+  <script src="./assets/custom-js/showPw-signin.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm fixed-top">
@@ -17,10 +20,10 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          <p><h3><span id="boldText">Flower</span>plicity</h3></p>
+          <h3><strong>Flower</strong>plicity</h3>
         </a>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul id="navMenus" class="navbar-nav mx-auto mx-md-auto mx-sm-auto mb-2 mb-md-2 mb-sm-2 mb-lg-0 mb-md-0 mb-sm-0 justify-content-center col">
+            <ul id="navMenus" class="navbar-nav me-auto me-md-auto me-sm-auto">
               <li class="nav-item">
                 <a class="nav-link active border-bottom navMenuLink" aria-current="page" href="index.html">Home</a>
               </li>
@@ -37,7 +40,7 @@
                 <a class="nav-link navMenuLink" href="#">About Us</a>
               </li>
             </ul>
-            <ul id="rightNav" class="navbar-nav ms-auto ms-md-auto ms-sm-auto mb-2 mb-md-2 mb-sm-2 mb-lg-0 mb-md-0 mb-sm-0">
+            <ul id="rightNav" class="navbar-nav ms-auto ms-md-auto ms-sm-auto">
               <li class="nav-item">
                 <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav-link nav-icons icons-index" href="#search">
                   <i class="fas fa-search"></i>
@@ -53,10 +56,12 @@
                   <i class="fa fa-shopping-basket"><span class="badge rounded-circle translate-middle">3</span></i>
                 </a>
               </li>
+              <li class="nav-item">
+                <a id="btn-signup" class="nav-link" data-bs-toggle="modal" href="#exampleModalToggle">SIGN IN <i class="fas fa-sign-in-alt"></i>
+                </a>
+              </li>
             </ul>
           </div>
-          <!-- <div class="collapse navbar-collapse col" id="navbarTogglerDemo03">
-          </div> -->
       </div>
     </nav>
     <!-- Modal -- Search -->
@@ -91,14 +96,20 @@
           <div class="modal-body modalbg-sign">
             <!-- Show a second modal and hide this one with the button below. -->
             <form>
-              <div class="row">
-                <div class="form col-md-6 col-sm-6">
+              <div id="form-center" class="row">
+                <div class="form col-md-6 col-sm">
                   <input class="input" placeholder="Email address" required="" type="email">
                   <span class="input-border"></span>
                 </div>
-                <div class="form col-md-6 col-sm-6">
-                  <input class="input" placeholder="Password" required="" type="password">
+                <div class="form col-md-6 col-sm">
+                  <input id="passInput" class="input" placeholder="Password" required="" type="password">
                   <span class="input-border"></span>
+                </div>
+                <div class="form-check col ms-2 mt-2">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultShowPass">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Show Password
+                  </label>
                 </div>
                 <div class="row mt-4">
                   <div class="col d-flex justify-content-start">
@@ -111,28 +122,35 @@
                   </div>
                   <div id="forgot-txt" class="col">
                     <!-- Simple link -->
-                    <a href="#!">Forgot password?</a>
+                    <a href="./pages/forgotpassword.html">Forgot password?</a>
                   </div>
                 </div>
               </div>
-              <a href="./pages/user.html" class="btn-sm btn btn-success mt-2 ">SIGN IN</a>
+              <div class="form-check col">
+                <input class="form-check-input" type="checkbox" value="s" id="flexCheckDefaultSigninChoice">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Check here if you have a floral business
+                </label>
+              </div>
+              <div>
+                <a id="signinUser" href="./pages/user.html" class="btn-sm btn btn-success mt-2 ">SIGN IN</a>
+                <a id="signinOwner" href="./pages/business-owner.html" class="btn-sm btn btn-success mt-2 ">Sign as Seller</a>
+              </div>
             </form>
           </div>
-          <div class="modal-footer justify-content-between">
+          <div class="modal-footer">
             <div class="row">
               <div class="col">
                 <p id="sign-options" class="m-auto">
-                  Sign in or sign up with:
+                  Sign in with:
                   <a href="#"><i class="fab fa-facebook-f ps-2"></i></a>
                   <a href="#"><i class="fab fa-google text-danger ps-2"></i></a>
                   <a href="#"><i class="fab fa-twitter ps-2 text-primary"></i></a>
                 </p>
               </div>
-              <!-- <div id="regQ-txt" class="col">
-                <p>Are you a flower shop owner or a local flower grower?
-                  <a href="#">Register Here</a>
-                </p>
-              </div> -->
+            </div>
+            <div id="regQ-txt" class="col float-end">
+              <a href="pages/register.html">Create Account</a>
             </div>
           </div>
         </div>
@@ -188,24 +206,22 @@
       <section class="container container-md container-sm mt-1 mt-md-1 mt-sm-1">
         <div id="welcome-row" class="row bg-light container-md p-3 m-auto">
           <div class="col col-md col-sm" id="div-welcomeImg">
-            <img id="welcome-image" class="img-fluid rounded shadow" alt="">
+            <div id="welcome-image" class="img-fluid border-0" alt=""></div>
           </div>
-          <div class="welcome-text col col-md col-sm m-auto m-md-auto m-sm-auto container mt-1">
-            <h1>Welcome to <span id="boldText">Flower</span>plicity</h1>
+          <div class="welcome-text col col-md m-auto m-md-auto m-sm-auto">
+            <h2 class="fs-1">Welcome to <strong>Flower</strong>plicity</h2>
             <h5><p>Simply. Easy. Hassle Free.</p></h5>
-            <a id="btn-signup" data-bs-toggle="modal" href="#exampleModalToggle">SIGN IN <i class="fas fa-sign-in-alt"></i>
-            </a>
           </div>
         </div>
       </section>
       <section class="container container-md container-sm mt-1 mt-md-1 mt-sm-1">
         <div id="shopnearby-row" class="row bg-secondary bg-opacity-10 container-md p-3 m-auto">
           <div id="btnshop-text" class="welcome-text col col-md col-sm m-auto container">
-            <h1 class="fw-bold">ONE STOP SHOPPING FOR ALL OF YOUR FLORAL NEEDS</h1>
-            <a id="btnshop-nearby" href="./pages/shops.html" class="my-2">SHOPS NEARBY <i class="fas fa-long-arrow-alt-right"></i></a>
+            <h3 class="mb-2">ONE-STOP SHOPPING FOR ALL OF YOUR FLORAL NEEDS</h3>
+              <a id="btnshop-nearby" href="#" class="mt-lg-2">LEARN MORE</a>
           </div>
           <div class="col col-sm col-md" id="div-welcomeImg">
-            <img id="shop-nearbyImage" class="img-fluid rounded shadow" alt="">
+            <div id="shop-nearbyImage" class="img-fluid" alt=""></div>
           </div>
         </div>
       </section>
@@ -215,10 +231,10 @@
         <div class="bs-row row row-cols-1 row-cols-md-3 row-cols-sm-1 row-cols-md-3 g-4">
           <div class="col column">
             <div class="card-hover card w-100 h-100">
-              <a href="#"><img id="bs-img1" class="card-img-top"></a>
+              <a href="pages/flowers/white-flower.html"><img id="bs-img1" class="card-img-top"></a>
               <div class="card-body">
                 <div class="d-flex justify-content-between">
-                  <a href="#" class=" card-link link-dark text-link fw-bold">White Flower</a>
+                  <a href="pages/flowers/white-flower.html" class=" card-link link-dark text-link fw-bold">White Flower</a>
                   <p class="card-text">&#8369 1000</p>
                 </div>
                 <p class="card-text float-end"><s>&#8369 2000</s></p>
@@ -277,10 +293,10 @@
           </div>
           <div class="col column">
             <div class="card-hover card w-100 h-100">
-              <a href="#"><img id="bs-img4" class="card-img-top" alt=""></a>
+              <a href="pages/flowers/pale-red-flower.html"><img id="bs-img4" class="card-img-top" alt=""></a>
               <div class="card-body">
                 <div class="d-flex justify-content-between">
-                  <a href="#" class="card-link link-dark text-link fw-bold">Pale Red Flower</a>
+                  <a href="pages/flowers/pale-red-flower.html" class="card-link link-dark text-link fw-bold">Pale Red Flower</a>
                   <p class="card-text">&#8369 1500</p>
                 </div>
                 <p class="card-text float-end"><s>&#8369 1800</s></p>
@@ -339,21 +355,10 @@
       </section>
     </main>
     <article class="container mt-5 m-auto gap-md-1">
-      <h1 class="fw-bold text-center">FEATURED GIFT IDEAS</h1>
+      <h1 class="fw-bold text-center ">FEATURED GIFT IDEAS</h1>
       <hr class="style-eight">
       <div class="row blog-row">
         <div class="col-sm-4 col-md-4 card-tablet">
-          <!-- <div id="first-blog" class="card">
-            <img src="images/bs1.jpg" class="card-img-top img-fluid" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-            <div class="card-footer">
-              <p>content</p>
-            </div>
-          </div> -->
           <figure class="figure">
             <img src="assets/images/lina-verovaya-GQQ6BRJxysU-unsplash.jpg" class="figure-img img-fluid rounded" alt="...">
             <figcaption class="figure-caption"><h4>Trendy backpacks for your trendy love ones just like you.</h4></figcaption>
@@ -361,17 +366,6 @@
           </figure>
         </div>
         <div id="second-blog" class="col-sm-4 col-md-4 card-tablet">
-          <!-- <div class="card">
-              <img src="images/bs1.jpg" class="card-img-top img-fluid" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-              <div class="card-footer">
-                <p>content</p>
-              </div>
-          </div> -->
           <figure class="figure">
             <img src="assets/images/chocs.jpg" class="figure-img img-fluid rounded" alt="...">
             <figcaption class="figure-caption"><h4>Spread the sweetness overload this valentine's season.</h4></figcaption>

@@ -1,0 +1,72 @@
+#businessDiv, #btnUser-signupOwner, #businessCategoryDiv{
+  display: none;
+}
+#businessDiv input, #businessCategoryDiv{
+  width: 305px;
+}
+#reg-img{
+  background-image: url('../images/undraw_nature_on_screen_xkli.svg');
+  background-repeat:no-repeat;
+  background-size: contain;
+  height:400px;
+  width:400px;
+}
+.customer-input{
+  width: 305px;
+}
+hr.customer-hr {
+  overflow: visible; /* For IE */
+  padding: 0;
+  border: none;
+  border-top: thin solid #333;
+  color: #333;
+  text-align: center;
+  width: 305px;
+  height: 12px;
+  margin-bottom:auto;
+}
+hr.customer-hr:after {
+  content: "or";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  padding: 0 0.25em;
+  background-color: white;
+}
+#sign-socialLinks{
+  width: 305px;
+  text-align:center;
+}
+#sign-socialLinks a{
+  position:relative;
+  left: 10px;
+}
+#signup-txt{
+  font-size: 13px;
+}
+#signQ-div{
+/*     outline: dotted 1px; */
+  width: 250px;
+  margin: 0px 40px;
+}
+/* Tablet Viewport */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  #btnUser-signup{
+    width: 305px;
+  }
+  #btnUser-signupOwner{
+    width: 305px;
+  }
+}
+/* Mobile Viewport */
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px){
+  #btnUser-signup{
+    width: 305px;
+  }
+  #btnUser-signupOwner{
+    width: 305px;
+  }
+  #reg-img{
+    display: none;
+  }
+}

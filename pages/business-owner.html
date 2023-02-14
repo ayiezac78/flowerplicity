@@ -11,6 +11,7 @@
   <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
   <script src="../assets/js/bootstrap.bundle.js"></script>
   <script src="../assets/custom-js/edit-popalert.js"></script>
+  <script src="../assets/custom-js/select-links.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm fixed-top">
@@ -57,7 +58,7 @@
             </li>
             <div id="profile-dd" class="nav-item dropdown-center">
               <a class="nav-link dropdown-toggle" href="#" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                <img id="user-img" class="rounded-circle img-fluid" src="../assets/images/user-img.jpg">
+                <img id="user-img" class="rounded-circle img-fluid" src="../assets/images/owner-img.jpg">
               </a>
               <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
                 <li><a class="dropdown-item" href="../pages/user.html">Settings</a></li>
@@ -102,13 +103,15 @@
       <h1>Settings</h1>
       <div id="user-div" class="row my-4 container-lg container-md container-sm shadow p-4">
         <div id="user-card" class="">
-          <img id="userA-img" src="../assets/images/user-img.jpg" class="card-img-top img-thumbnail rounded-circle" alt="profile image">
+          <img id="userA-img" src="../assets/images/owner-img.jpg" class="card-img-top img-thumbnail rounded-circle" alt="profile image">
           <div class="text-center">
-            <p>Irene <a class="text-dark" href="#" onclick="editProfile()"><i class="far fa-edit"></i></a></p>
+            <h2>Ariel</h2>
           </div>
           <div class="d-flex p-2">
             <div class="nav flex-column nav-pills nav-fill" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <a class="nav-link m active" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+              <a class="nav-link active" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+              <a class="nav-link" id="v-pills-business-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-business-profile" type="button" role="tab" aria-controls="v-pills-business-profile" aria-selected="false">Business Profile</a>
+              <a class="nav-link" id="v-pills-floral-products-tab" data-bs-toggle="pill" data-bs-target="#v-pills-floral-products" type="button" role="tab" aria-controls="v-pills-floral-products" aria-selected="false">My Posted Flowers</a>
               <a class="nav-link" id="v-pills-password-tab" data-bs-toggle="pill" data-bs-target="#v-pills-password" type="button" role="tab" aria-controls="v-pills-password" aria-selected="false">Change Password</a>
               <a class="nav-link" id="v-pills-track-order-tab" data-bs-toggle="pill" data-bs-target="#v-pills-track-order" type="button" role="tab" aria-controls="v-pills-track-order" aria-selected="false">Track my Order</a>
               <a class="nav-link" id="v-pills-notif-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-notif-settings" type="button" role="tab" aria-controls="v-pills-notif-settings" aria-selected="false">Notification Settings</a>
@@ -123,13 +126,13 @@
             <form id="user-edit">
               <div class="row g-3">
                 <div class="col-lg-6">
-                  <input value="Irene" type="text" class="form-control default-disabled user-input" placeholder="First name" aria-label="First name" disabled>
+                  <input value="Ariel" type="text" class="form-control default-disabled user-input" placeholder="First name" aria-label="First name" disabled>
                 </div>
                 <div class="col-lg-6">
                   <input type="text" class="form-control user-input" placeholder="Last name" aria-label="Last name">
                 </div>
                 <div class="col-lg-6">
-                  <input value="tabuadairene34@gmail.com" placeholder="Email" type="email" class="form-control default-disabled user-input" id="inputEmail4" disabled>
+                  <input value="admaniago01@gmail.com" placeholder="Email" type="email" class="form-control default-disabled user-input" id="inputEmail4" disabled>
                 </div>
                 <div class="col-lg-6">
                   <input placeholder="Contact Number" type="number" class="form-control user-input" id="inputNumber4">
@@ -158,10 +161,101 @@
                   <input type="text" class="form-control user-input" id="inputZip">
                 </div>
                 <div class="col-12">
+                  <a class="text-dark btn btn-secondary" href="#" onclick="editProfile()">Edit</a>
                   <button id="toastbtn" type="submit" class="btn btn-primary" onclick="updateBtn()">Update</button>
                 </div>
               </div>
             </form>
+          </div>
+          <!-- Business Profile Settings -->
+          <div class="p-3 tab-pane fade business-settings" id="v-pills-business-profile" role="tabpanel" aria-labelledby="v-pills-business-profile-tab" tabindex="0">
+            <h3 class="mb-4">Business Profile Settings</h3>
+            <form id="ownerB-edit">
+              <div class="row g-3">
+                <div class="col-lg-6">
+                  <img id="business-img" class="img-thumbnail" src="../assets/images/cactus.png" alt="cactus">
+                  <p><strong>Business Category:</strong> <p>Flower Farm</p></p>
+                </div>
+                <div class="col-lg-6">
+                  <p><strong>Business Name:</strong><p>Vines & Vases Flower Farm</p></p>
+                </div>
+                <div class="col-lg-6">
+                  Social Media Account Links:
+                  <div class="input-group input-group-sm w-50">
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Choose</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="#">Facebook</a></li>
+                      <li><a class="dropdown-item" href="#">Instagram</a></li>
+                      <li><a class="dropdown-item" href="#">Twitter</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  Services Offered:
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Floral Arrangements
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Delivery Services
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Custom bouquets
+                    </label>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <input placeholder="Business Email" type="email" class="form-control default-disabled user-input" id="inputEmailOwnerB">
+                </div>
+                <div class="col-lg-6">
+                  <input placeholder="Business Contact Number" type="number" class="form-control user-input" id="inputNumber4OwnerB">
+                </div>
+                <div class="col-lg-6">
+                  <input placeholder="Business Hours" type="number" class="form-control user-input" id="inputHr4OwnerB">
+                </div>
+                <div class="col-lg-6">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control user-input" id="inputAddressOwnerB" placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Address 2</label>
+                  <input type="text" class="form-control user-input" id="inputAddress2OwnerB" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control user-input" id="inputCityOwnerB">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputStateOwnerB" class="form-label">State</label>
+                  <select id="inputStateOwnerB" class="form-select user-input">
+                    <option selected>Choose...</option>
+                    <option>Negros Occidental</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input type="text" class="form-control user-input" id="inputZipOwnerB">
+                </div>
+                <div class="col-12">
+                  <button id="toastbtnOwner" type="submit" class="btn btn-primary" onclick="popAlert()">Update</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- Floral Products -->
+          <div class="p-3 tab-pane fade" id="v-pills-floral-products" role="tabpanel" aria-labelledby="v-pills-floral-products-tab" tabindex="0">
+            <h3 class="mb-3">My Floral Products</h3>
+            <a href="../pages/flowers/pale-red-flower.html">Pale Red Flower</a>
           </div>
           <!-- Password Settings -->
           <div class="tab-pane fade p-lg-3" id="v-pills-password" role="tabpanel" aria-labelledby="v-pills-password-tab" tabindex="0">
@@ -349,7 +443,7 @@
               <a href="#!" class="text-reset">About Us</a>
             </p>
             <p>
-              <a href="pages/shops.html" class="text-reset">Shop Near Me</a>
+              <a href="../pages/shops.html" class="text-reset">Shop Near Me</a>
             </p>
           </div>
           <!-- Grid column -->
