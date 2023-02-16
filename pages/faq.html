@@ -85,97 +85,87 @@
       </div>
     </div>
   </div>
-  <!-- Sign up form modal -->
-  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header bg-success bg-opacity-50">
-          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Welcome to <b>Flower</b>plicity</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body modalbg-sign">
-          <!-- Show a second modal and hide this one with the button below. -->
-          <form>
-            <div id="form-center" class="row">
-              <div class="form col-md-6 col-sm">
-                <input class="input" placeholder="Email address" required="" type="email">
-                <span class="input-border"></span>
-              </div>
-              <div class="form col-md-6 col-sm">
-                <input id="passInput" class="input" placeholder="Password" required="" type="password">
-                <span class="input-border"></span>
-              </div>
-              <div class="form-check col ms-2 mt-2">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultShowPass">
-                <label class="form-check-label" for="flexCheckDefault">
-                  Show Password
-                </label>
-              </div>
-              <div class="row mt-4">
-                <div class="col d-flex justify-content-start">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckCheck" checked>
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Remember me
-                    </label>
+    <!-- Sign in form modal -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-success bg-opacity-50">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Welcome to <b>Flower</b>plicity</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body modalbg-sign">
+            <!-- Show a second modal and hide this one with the button below. -->
+            <form>
+              <div id="form-center" class="row">
+                <div class="form col-md-6 col-sm">
+                  <input class="input" placeholder="Email address" required="" type="email">
+                  <span class="input-border"></span>
+                </div>
+                <div class="form col-md-6 col-sm">
+                  <input id="passInput" class="input" placeholder="Password" required="" type="password">
+                  <span class="input-border"></span>
+                </div>
+                <div class="form-check col ms-2 mt-2">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultShowPass">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Show Password
+                  </label>
+                </div>
+                <div class="row mt-4">
+                  <div class="col d-flex justify-content-start">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckCheck" checked>
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                  <div id="forgot-txt" class="col">
+                    <!-- Simple link -->
+                    <a href="./pages/forgotpassword.html">Forgot password?</a>
                   </div>
                 </div>
-                <div id="forgot-txt" class="col">
-                  <!-- Simple link -->
-                  <a href="./pages/forgotpassword.html">Forgot password?</a>
-                </div>
+              </div>
+              <div class="form-check col">
+                <input class="form-check-input" type="checkbox" value="s" id="flexCheckDefaultSigninChoice">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Check here if you have a floral business
+                </label>
+              </div>
+              <div>
+                <a id="signinUser" href="../pages/user.html" class="btn-sm btn btn-success mt-2 ">SIGN IN</a>
+                <a id="signinOwner" href="../pages/business-owner.html" class="btn-sm btn btn-success mt-2 ">Sign as Seller</a>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer d-flex justify-content-between">
+            <div class="row">
+              <div class="col">
+                <p id="sign-options">
+                  Sign in with:
+                  <a href="#"><i class="fab fa-facebook-f ps-2"></i></a>
+                  <a href="#"><i class="fab fa-google text-danger ps-2"></i></a>
+                  <a href="#"><i class="fab fa-twitter ps-2 text-primary"></i></a>
+                </p>
+              </div>
+              <div id="regQ-txt" class="col">
+                <small><p>Don't have an account? <a href="../pages/register.html">Sign up</a></p></small>
               </div>
             </div>
-            <div class="form-check col">
-              <input class="form-check-input" type="checkbox" value="s" id="flexCheckDefaultSigninChoice">
-              <label class="form-check-label" for="flexCheckDefault">
-                Check here if you have a floral business
-              </label>
-            </div>
-            <div>
-              <a id="signinUser" href="./pages/user.html" class="btn-sm btn btn-success mt-2 ">SIGN IN</a>
-              <a id="signinOwner" href="./pages/business-owner.html" class="btn-sm btn btn-success mt-2 ">Sign as Seller</a>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <div class="row">
-            <div class="col">
-              <p id="sign-options" class="m-auto">
-                Sign in with:
-                <a href="#"><i class="fab fa-facebook-f ps-2"></i></a>
-                <a href="#"><i class="fab fa-google text-danger ps-2"></i></a>
-                <a href="#"><i class="fab fa-twitter ps-2 text-primary"></i></a>
-              </p>
-            </div>
-          </div>
-          <div id="regQ-txt" class="col float-end">
-            <a href="pages/register.html">Create Account</a>
+            <!-- <div  class="col">
+            </div> -->
           </div>
         </div>
       </div>
     </div>
-  </div>
   <!-- Sections -->
   <main class="container my-5 py-5">
-    <h1 class="col-6 offset-3 text-center fw-bold mt-3">Frequently Asked Questions</h1>
     <!-- FAQ -->
     <section class="container">
       <div class="row mt-5">
+        <h3 class="mb-3">Frequently Asked Questions</h3>
         <div class="col">
           <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Tell me all about Flowerplicity
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -191,12 +181,12 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  (Business Owner) How do I know that my order is confirmed?
+                  How Will My Flowers Ordered Online Be Delivered?
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <strong>Flower</strong>plicity flowers are 100% arranged and delivered by local florists in your area. That means every bouquet will be delivered right to your door with the utmost care. We are also utilizing contactless delivery for your safety and the safety of our local florists.
                 </div>
               </div>
             </div>
@@ -208,19 +198,22 @@
               </h2>
               <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  You can pay thru online bank transfers, gcash, paypal or maya. We do accept cash on delivery.
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingFive">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                  How do I know if the flower freshly delivered?
+                  Which Flowers Should I buy?
                 </button>
               </h2>
               <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <p>There are so many beautiful flowers to choose from, so it really depends on personal preferences and the occasion.</p>
+                  <p>Here are a few suggestions:</p>
+                  <p>•	For a romantic gesture, roses are a classic choice. You can choose from traditional red, or opt for a softer colour like pink or white.</p>
+                  <p>•	If you're looking for something a bit more unique, consider buying peonies, sunflowers, or lilies.</p>
                 </div>
               </div>
             </div>
@@ -261,12 +254,12 @@
       <div class="modal-body">
         <div class="form-floating">
           <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-          <label for="floatingTextarea">Please leave a message..</label>
+          <label for="floatingTextarea">Please leave a message...</label>
         </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send Message</button>
+        <button type="button" class="btn btn-success opacity-75">Send Message</button>
       </div>
     </div>
   </div>

@@ -12,6 +12,7 @@
   <script src="../assets/js/bootstrap.bundle.js"></script>
   <script src="../assets/custom-js/signin-choice.js"></script>
   <script src="../assets/custom-js/showPw-signin.js"></script>
+  <script src="../assets/custom-js/edit-popalert.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm fixed-top">
@@ -47,12 +48,12 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-icons icons-index" href="./pages/wishlist.html">
+              <a class="nav-link nav-icons icons-index" href="../pages/wishlist.html">
                 <i class="far fa-heart"><span class="badge rounded-circle translate-middle">2</span></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-icons icons-index" href="./pages/addtobasket.html">
+              <a class="nav-link nav-icons icons-index" href="../pages/addtobasket.html">
                 <i class="fa fa-shopping-basket"><span class="badge rounded-circle translate-middle">3</span></i>
               </a>
             </li>
@@ -85,77 +86,79 @@
       </div>
     </div>
   </div>
-  <!-- Sign up form modal -->
-  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header bg-success bg-opacity-50">
-          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Welcome to <b>Flower</b>plicity</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body modalbg-sign">
-          <!-- Show a second modal and hide this one with the button below. -->
-          <form>
-            <div id="form-center" class="row">
-              <div class="form col-md-6 col-sm">
-                <input class="input" placeholder="Email address" required="" type="email">
-                <span class="input-border"></span>
-              </div>
-              <div class="form col-md-6 col-sm">
-                <input id="passInput" class="input" placeholder="Password" required="" type="password">
-                <span class="input-border"></span>
-              </div>
-              <div class="form-check col ms-2 mt-2">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultShowPass">
-                <label class="form-check-label" for="flexCheckDefault">
-                  Show Password
-                </label>
-              </div>
-              <div class="row mt-4">
-                <div class="col d-flex justify-content-start">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckCheck" checked>
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Remember me
-                    </label>
+    <!-- Sign in form modal -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-success bg-opacity-50">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Welcome to <b>Flower</b>plicity</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body modalbg-sign">
+            <!-- Show a second modal and hide this one with the button below. -->
+            <form>
+              <div id="form-center" class="row">
+                <div class="form col-md-6 col-sm">
+                  <input class="input" placeholder="Email address" required="" type="email">
+                  <span class="input-border"></span>
+                </div>
+                <div class="form col-md-6 col-sm">
+                  <input id="passInput" class="input" placeholder="Password" required="" type="password">
+                  <span class="input-border"></span>
+                </div>
+                <div class="form-check col ms-2 mt-2">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultShowPass">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Show Password
+                  </label>
+                </div>
+                <div class="row mt-4">
+                  <div class="col d-flex justify-content-start">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckCheck" checked>
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                  <div id="forgot-txt" class="col">
+                    <!-- Simple link -->
+                    <a href="../pages/forgotpassword.html">Forgot password?</a>
                   </div>
                 </div>
-                <div id="forgot-txt" class="col">
-                  <!-- Simple link -->
-                  <a href="./pages/forgotpassword.html">Forgot password?</a>
-                </div>
+              </div>
+              <div class="form-check col">
+                <input class="form-check-input" type="checkbox" value="s" id="flexCheckDefaultSigninChoice">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Check here if you have a floral business
+                </label>
+              </div>
+              <div>
+                <a id="signinUser" href="../pages/user.html" class="btn-sm btn btn-success mt-2 ">SIGN IN</a>
+                <a id="signinOwner" href="../pages/business-owner.html" class="btn-sm btn btn-success mt-2 ">Sign as Seller</a>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer d-flex justify-content-between">
+            <div class="row">
+              <div class="col">
+                <p id="sign-options">
+                  Sign in with:
+                  <a href="#"><i class="fab fa-facebook-f ps-2"></i></a>
+                  <a href="#"><i class="fab fa-google text-danger ps-2"></i></a>
+                  <a href="#"><i class="fab fa-twitter ps-2 text-primary"></i></a>
+                </p>
+              </div>
+              <div id="regQ-txt" class="col">
+                <small><p>Don't have an account? <a href="../pages/register.html">Sign up</a></p></small>
               </div>
             </div>
-            <div class="form-check col">
-              <input class="form-check-input" type="checkbox" value="s" id="flexCheckDefaultSigninChoice">
-              <label class="form-check-label" for="flexCheckDefault">
-                Check here if you have a floral business
-              </label>
-            </div>
-            <div>
-              <a id="signinUser" href="./pages/user.html" class="btn-sm btn btn-success mt-2 ">SIGN IN</a>
-              <a id="signinOwner" href="./pages/business-owner.html" class="btn-sm btn btn-success mt-2 ">Sign as Seller</a>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <div class="row">
-            <div class="col">
-              <p id="sign-options" class="m-auto">
-                Sign in with:
-                <a href="#"><i class="fab fa-facebook-f ps-2"></i></a>
-                <a href="#"><i class="fab fa-google text-danger ps-2"></i></a>
-                <a href="#"><i class="fab fa-twitter ps-2 text-primary"></i></a>
-              </p>
-            </div>
-          </div>
-          <div id="regQ-txt" class="col float-end">
-            <a href="pages/register.html">Create Account</a>
+            <!-- <div  class="col">
+            </div> -->
           </div>
         </div>
       </div>
     </div>
-  </div>
   <!-- Sections -->
   <main class="container my-5 py-5">
     <h1 class="col-6 offset-3 text-center fw-bold">About Us</h1>
@@ -274,6 +277,15 @@
           </small>
         </div>
         <div class="col">
+          <!-- Toast Contact Us -->
+          <div id="contactToast" class="toast toast-container" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+              <div class="toast-body">
+                Your concern was successfully sent to us!
+              </div>
+              <button type="button" class="btn-close btn-close me-1 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+          </div>
           <form>
             <div class="input-group mb-3 ">
               <span class="input-group-text" id="basic-addon1"><i class="fa fa-user-circle"></i></span>
@@ -286,10 +298,9 @@
             <div class="input-group">
               <textarea id="message-area" class="form-control form-control-sm contact-inputArea" aria-label="With textarea" placeholder="Send us a message.."></textarea>
             </div>
-            <a href="#" class="btn btn-sm btn-secondary mt-3">SUBMIT</a>
+            <a href="#contact" onclick="popAlert()" class="btn btn-sm btn-secondary mt-3">SUBMIT</a>
           </form>
         </div>
-        
       </div>
     </section>
   </main>

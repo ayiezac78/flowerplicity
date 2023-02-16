@@ -4,6 +4,9 @@
 /*   margin: auto; */
   margin-left: auto;
 }
+#addtobasketToast,#addtowishlistToast,#wishlistToast-magma,#basketToast-magma{
+  width: auto;
+}
 .collections-icons{
   text-decoration: none;
   color: #111;
@@ -142,5 +145,15 @@
  }
  .collections-icons{
   font-size: 14px;
+ }
+ #search-category{
+  margin:auto;
+  display:flex
+ }
+ #sTxt-flower{
+  width:100%;
+ }
+ #select-category{
+  min-width:100%;
  }
 }

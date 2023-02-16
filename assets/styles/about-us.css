@@ -6,6 +6,9 @@
   height: 500px;
   width: auto;
 }
+#contactToast{
+  width: auto;
+}
 #ayie-img{
   background-image: url('../images/ayie.jpg');
   background-position: center;
