@@ -28,16 +28,16 @@
                 <a class="nav-link active border-bottom navMenuLink" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navMenuLink" href="./pages/flowers.html">Collections</a>
+                <a class="nav-link navMenuLink" href="./pages/flowers.html">Shop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navMenuLink" href="#">Gift Ideas</a>
+                <a class="nav-link navMenuLink" href="./pages/blog.html">Blogs</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navMenuLink" href="./pages/blogs.html">Blogs</a>
+                <a class="nav-link navMenuLink" href="./pages/about-us.html">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navMenuLink" href="#">About Us</a>
+                <a class="nav-link navMenuLink" href="./pages/faq.html">FAQ</a>
               </li>
             </ul>
             <ul id="rightNav" class="navbar-nav ms-auto ms-md-auto ms-sm-auto">
@@ -85,7 +85,7 @@
         </div>
       </div>
     </div>
-    <!-- Sign up form modal -->
+    <!-- Sign in form modal -->
     <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
@@ -138,20 +138,22 @@
               </div>
             </form>
           </div>
-          <div class="modal-footer">
+          <div class="modal-footer d-flex justify-content-between">
             <div class="row">
               <div class="col">
-                <p id="sign-options" class="m-auto">
+                <p id="sign-options">
                   Sign in with:
                   <a href="#"><i class="fab fa-facebook-f ps-2"></i></a>
                   <a href="#"><i class="fab fa-google text-danger ps-2"></i></a>
                   <a href="#"><i class="fab fa-twitter ps-2 text-primary"></i></a>
                 </p>
               </div>
+              <div id="regQ-txt" class="col">
+                <small><p>Don't have an account? <a href="pages/register.html">Sign up</a></p></small>
+              </div>
             </div>
-            <div id="regQ-txt" class="col float-end">
-              <a href="pages/register.html">Create Account</a>
-            </div>
+            <!-- <div  class="col">
+            </div> -->
           </div>
         </div>
       </div>
@@ -171,16 +173,16 @@
               <div id="carousel-container" class="container container-lg container-md container-sm text-center">
                 <h1>Fall in love with our Valentine's Day products.</h1>
                 <a href="pages/flowers.html" class="btn-carousel">
-                  SHOP COLLECTIONS
+                  SHOP HERE
                 </a>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="3000">
-              <div class="overlay-image d-block"  style="background-image: url(assets/images/hipster-mum-Ri17WyRuclo-unsplash.jpg);"></div>
+              <div class="overlay-image d-block"  style="background-image: url(assets/images/png-faq.png);"></div>
               <div id="carousel-container" class="container container-lg container-md container-sm text-center">
-                <h1>Get the latest trends of Gift Ideas</h1>
+                <h1>Know your concerns about our site</h1>
                 <a href="#" class="btn-carousel">
-                  SHOW GIFT IDEAS
+                  FAQ
                 </a>
               </div>
             </div>
@@ -218,7 +220,7 @@
         <div id="shopnearby-row" class="row bg-secondary bg-opacity-10 container-md p-3 m-auto">
           <div id="btnshop-text" class="welcome-text col col-md col-sm m-auto container">
             <h3 class="mb-2">ONE-STOP SHOPPING FOR ALL OF YOUR FLORAL NEEDS</h3>
-              <a id="btnshop-nearby" href="#" class="mt-lg-2">LEARN MORE</a>
+              <a id="btnshop-nearby" href="./pages/faq.html" class="mt-lg-2">LEARN MORE</a>
           </div>
           <div class="col col-sm col-md" id="div-welcomeImg">
             <div id="shop-nearbyImage" class="img-fluid" alt=""></div>
@@ -482,15 +484,4 @@
 </footer>
 <!-- Footer -->
 </body>
-<script>
-  // Tooltips
-  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-
-const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-const popover = new bootstrap.Popover('.example-popover', {
-  container: 'body'
-})
-</script>
 </html>

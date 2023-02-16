@@ -1,0 +1,70 @@
+#about-img{
+  background-image: url('../images/about-us.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  height: 500px;
+  width: auto;
+}
+#contactToast{
+  width: auto;
+}
+#ayie-img{
+  background-image: url('../images/ayie.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  height: 500px;
+  width: auto;
+}
+#rosie-img{
+  background-image: url('../images/rosie.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  height: 500px;
+  width: auto;
+}
+#desc{
+  text-indent:50px;
+}
+#message-area{
+  resize: none;
+}
+.contact-input{
+  max-width:300px;
+}
+.contact-inputArea{
+  max-width:400px;
+}
+/* Tablet Viewport */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
+
+}
+/* Mobile Viewport */
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px){
+  #about-img{
+    display:none;
+  }
+  #ayie-img{
+    margin-bottom:20px;
+  }
+  #rosie-info{
+    margin-bottom: 20px;
+  }
+  .team-quote{
+    font-size: 16px;
+  }
+  .blockquote-footer{
+    font-size:12px;
+  }
+  #contact-us{
+    margin:auto;
+  }
+  #send-contactTxt{
+    font-size: 13px;
+    margin-bottom:20px;
+
+/*     width:100px; */
+  }
+}

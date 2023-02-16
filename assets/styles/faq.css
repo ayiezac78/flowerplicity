@@ -1,0 +1,11 @@
+#faq-img{
+  background-image: url('../images/undraw_questions_re_1fy7.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  height: 500px;
+  width: auto;
+}
+#bg-chatConcern{
+  background-color: #57CC9D;
+}

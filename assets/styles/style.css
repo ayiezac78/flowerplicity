@@ -283,7 +283,7 @@ hr.style-eight:after {
   color: #0d0d0d;
   border-color: #0d0d0d;
  }
- #regQ-txt, #shopName-txt{
+ #shopName-txt{
   font-size: 13px;
  }
 .fa-question-circle{
@@ -314,9 +314,6 @@ hr.style-eight:after {
 }
 #regQ-txt a{
   text-decoration: none;
-  position: relative;
-  left: 170px;
-  margin:auto;
  }
 /* #shopName-txt{
  width: 200px;

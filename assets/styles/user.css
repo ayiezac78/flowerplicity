@@ -61,12 +61,12 @@ input[type=number] {
 	color:#111;
 	background-color: #FECF67;
 }
-.toast{
+#user-toast{
 	position: fixed;
 	top: 100px;
 	right: 123px;
 	width: auto;
-	background-color: #FECF67;
+	/* background-color: #FECF67; */
 }
 /* Tablet Viewport */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
@@ -79,7 +79,7 @@ input[type=number] {
 		padding: 2px;
 		font-size:14px;
 	}
-	.toast{
+	#user-toast{
 		right:40px;
 	}
 }
@@ -104,7 +104,7 @@ input[type=number] {
 		position:relative;
 		left:54px;
 	}
-	.toast{
+	#user-toast{
 		right:15px;
 	}
 }
