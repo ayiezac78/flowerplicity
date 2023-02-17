@@ -1,3 +1,9 @@
+#floatingChatTextarea{
+  resize: none;
+}
+#atbToast,#placeordertoast{
+  width: auto;
+}
 .btn-prodMagma{
   text-decoration:none;
   padding: 10px 10px;
@@ -26,7 +32,7 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
  #prod-infoMagma{
    padding: 10px;
-   font-size: 12px;
+   font-size: 13px;
  }
   .btn-prodMagma{
     padding: 5px;
@@ -44,7 +50,10 @@
    max-width: 402px;
    margin:auto;
    margin-top: 5px;
-  font-size: 12px;
-  height: 330px;
+   font-size: 14px;
+   height: 395px;
+ }
+ #del-date{
+  margin-top: 10px;
  }
 }

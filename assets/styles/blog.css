@@ -1,13 +1,15 @@
 .blog-img{
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 700px;
+  width: auto;
   height: 400px;
 }
 .relatedblog-img{
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 400px;
+  width: auto;
   height: 400px;
 }
 #blog-image1{
@@ -23,7 +25,7 @@
   background-image: url('../images/ra4.jpg');
 }
 #relatedblog-image5{
-  background-image: url('../images/ra5.png');
+  background-image: url('../images/ra5.jpg');
 }
 #relatedblog-image6{
   background-image: url('../images/ra6.jpg');
@@ -48,28 +50,37 @@
 }
 /*Tablet Viewport  */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-  #blog-list{
-    min-width: 100%;
+  .blog-footer{
+    font-size: 16px;
   }
-  #relatedblog-list{
-    min-width: 100%;
+  .bcard-title{
+    font-size:20px;
   }
-  .crd{
-    height: 100%;
-  }
-    
 }
 /* Mobile Viewport */
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){
-  #blog-list{
-    min-width: 100%;
+  #blog-card1{
+    min-height: 900px;
   }
-  #relatedblog-list{
-    min-width: 100%;
+  #blog-card2{
+    height: 640px;
   }
-  
+  #blog-card3{
+    height: 760px;
+  }
+  .bcard-title{
+    font-size:18px;
+  }
+  #rel-card1{
+    margin-bottom:10px;
+    height:700px;
+  }
+  #rel-card2{
+    margin-bottom:10px;
+    height:730px;
+  }
+  #rel-card3{
+    margin-bottom:10px;
+    height:730px;
+  }
 }
-
-
-
-

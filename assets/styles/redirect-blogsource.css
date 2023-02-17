@@ -1,0 +1,7 @@
+#redirect-img{
+  background-image: url('../images/redirect.svg');
+  background-size:contain;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 300px;
+}

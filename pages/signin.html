@@ -47,28 +47,17 @@
     </div>
   </nav>
   <main class="container my-5 py-5">
-    <section class="container container-md container-sm">
-      <strong class="h1">Create an Account</strong>
+    <section class="container container-md container-sm mt-5">
       <div id="reg-row" class="row m-auto">
+        <div id="sign-img" class="col"></div>
         <div id="reg-form" class="col mt-2 container-sm">
-          <div class="form-check form-check-inline">
+          <strong class="h1">Sign in to your account</strong>
+          <div class="form-check form-check-inline mt-3">
             <input class="form-check-input" type="checkbox" id="inlineCheckbox" value="C">
             <label class="form-check-label" for="inlineCheckbox1">Check here if you have a floral business</label>
           </div>
           <form class="mt-3">
             <div id="form-center">
-              <div id="businessDiv" class="C input-group input-group-sm mb-3 customer-input">
-                <input type="text" class="form-control" placeholder="Floral Business Name" aria-label="Username" aria-describedby="basic-addon1">
-              </div>
-              <select id="businessCategoryDiv" class="form-select form-select-sm mb-3 C" aria-label="Default select example">
-                <option selected>Business Category</option>
-                <option value="1">Flower Shop</option>
-                <option value="2">Flower Farm</option>
-              </select>
-              <div class="input-group input-group-sm mb-3 customer-input">
-                <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fas fa-user"></i></span>
-                <input placeholder="Name" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-              </div>
               <div class="input-group input-group-sm mb-3 customer-input">
                 <span class="input-group-text" id="inputGroup-sizing-sm">@</span>
                 <input placeholder="Email" type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
@@ -80,31 +69,25 @@
                   <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input" onclick="pwFunction()" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Show Password"/>
                 </div>
               </div>
-              <div class="input-group input-group-sm mb-3 customer-input">
-                <span class="input-group-text" id="basic-addon1"><i class="fas fa-key"></i></span>
-                <input placeholder="Repeat Password" id="rpwInput" type="password" class="form-control" aria-label="Text input with checkbox" />
-                <div class="input-group-text">
-                  <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input" onclick="rpwFunction()" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Show Password"/>
-                </div>
-              </div>
-              <div class="row">
+              <div class="row mt-4">
                 <div class="col d-flex justify-content-start">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultUser">
-                    <label class="form-check-label" for="flexCheckDefaultUser">
-                      I agree to the Terms and Conditions
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckCheck" checked>
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Remember me
                     </label>
+                    <a class="ms-5" href="../pages/forgotpassword.html">Forgot password?</a>
                   </div>
                 </div>
               </div>
             </div>
             <div class="d-grid col-6 me-auto">
-              <a id="btnUser-signup" href="../pages/registered-user.html" class="btn-sm btn btn-success bg-opacity-50 mt-2 ">SIGN UP AS USER</a>
-              <a id="btnUser-signupOwner" href="../pages/registered-seller.html" class="btn-sm btn btn-success bg-opacity-50 mt-2 ">REGISTER MY FLORAL BUSINESS</a>
+              <a id="btnUser-signup" href="../pages/user.html" class="btn-sm btn btn-success bg-opacity-50 mt-2 ">SIGN IN</a>
+              <a id="btnUser-signupOwner" href="../pages/business-owner.html" class="btn-sm btn btn-success bg-opacity-50 mt-2 ">SIGN AS SELLER</a>
             </div>
             <hr class="customer-hr">
             <div id="sign-socialLinks">
-              <p><small class="text-muted">Sign up with</small></p>
+              <p><small class="text-muted">Sign in with</small></p>
               <a href="#" class="me-4 link-secondary text-decoration-none">
                 <i class="fab fa-facebook-f"></i>
               </a>
@@ -116,13 +99,12 @@
               </a>
             </div>
             <div id="signQ-div" class="mt-2">
-              <small class="text-muted">Have an Account?</small>
-              <a class="text-muted" data-bs-toggle="modal" href="../pages/signin.html">Sign in here
+              <small class="text-muted">Don't have an Account?</small>
+              <a class="text-muted" data-bs-toggle="modal" href="../pages/register.html">Sign up
               </a>
             </div>
           </form>
         </div>
-        <div id="reg-img" class="col"></div>
       </div>
     </section>
   </main>
@@ -243,6 +225,7 @@
     // Tooltips
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  
   const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
   const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
   const popover = new bootstrap.Popover('.example-popover', {

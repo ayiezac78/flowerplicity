@@ -14,6 +14,24 @@ $(document).ready(function() {
   $("#wishlistbtn-magma").click(function(){
     $("#wishlistToast-magma").toast("show");
   });
+  $("#btnDelete").click(function(){
+    $("#deletedToast").toast("show");
+  });
+  $("#btnDeleteT").click(function(){
+    $("#deletedToast").toast("show");
+  });
+  $("#btnaddb").click(function(){
+    $("#basketWToast").toast("show");
+  });
+  $("#btnaddbasket").click(function(){
+    $("#basketWToast").toast("show");
+  });
+  $("#btnflower-magma").click(function(){
+    $("#placeordertoast").toast("show");
+  });
+  $("#btnatb").click(function(){
+    $("#atbToast").toast("show");
+  });
 });
 
 

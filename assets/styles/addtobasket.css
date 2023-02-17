@@ -3,19 +3,14 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 150px;
-  width: 180px;
+  width: 150px;
 }
 .btn-buyItem{
-  padding: 4px 15px;
-  border: 2px solid #111;
   transition: .3s;
-  color: #fff;
-  background-color:#FF7852;
+  color: #111;
 }
 .btn-buyItem:hover{
-  color: #111;
-  border: 2px solid #111;
-  background-color: #fff;
+  color: grey;
 }
 .basket-icon{
   display: none;
