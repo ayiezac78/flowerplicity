@@ -9,6 +9,10 @@
   <link rel="icon" href="../../assets/images/flowerplicity-website-favicon-white.png" type="image/png" sizes="16x16">
   <title>Flowerplicity</title>
   <script src="../../assets/js/bootstrap.bundle.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+  <script src="../../assets/custom-js/signin-choice.js"></script>
+  <script src="../../assets/custom-js/showPw-signin.js"></script>
+  <script src="../../assets/custom-js/edit-popalert.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm fixed-top">
@@ -25,16 +29,16 @@
               <a class="nav-link active border-bottom navMenuLink" aria-current="page" href="../../index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navMenuLink" href="../flowers.html">Collections</a>
+              <a class="nav-link navMenuLink" href="../flowers.html">SHOP</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navMenuLink" href="#">Gift Ideas</a>
+              <a class="nav-link navMenuLink" href="../blog.html">Blogs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navMenuLink" href="#">Blogs</a>
+              <a class="nav-link navMenuLink" href="../about-us.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navMenuLink" href="#">About Us</a>
+              <a class="nav-link navMenuLink" href="../faq.html">FAQ</a>
             </li>
           </ul>
           <ul id="rightNav" class="navbar-nav ms-auto ms-md-auto ms-sm-auto mb-2 mb-md-2 mb-sm-2 mb-lg-0 mb-md-0 mb-sm-0">
@@ -49,7 +53,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-icons" href="#shoppingcart">
+              <a class="nav-link nav-icons" href="../addtobasket.html">
                 <i class="fa fa-shopping-basket"><span class="badge rounded-circle translate-middle">3</span></i>
               </a>
             </li>
@@ -63,85 +67,116 @@
         </div> -->
     </div>
   </nav>
-  <!-- Modal -- Search -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header bg-success bg-opacity-50">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Search</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="input-group mb-3">
-            <input type="text" class="form-control border-success border-opacity-25" placeholder="Search Flower" aria-label="Search" aria-describedby="button-addon2">
-            <a href="#" class="btn btn-outline-success" type="button" id="button-addon2"><i class="fas fa-search"></i></a>
+    <!-- Modal -- Search -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-success bg-opacity-50">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Search Shop</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control border-success border-opacity-25" placeholder="Search floral shop or farm near you" aria-label="Search" aria-describedby="button-addon2">
+              <a href="../shops/serene-seeds.html" class="btn btn-outline-success" type="button" id="button-addon2"><i class="fas fa-search"></i></a>
+            </div>
           </div>
         </div>
-        <!-- <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div> -->
       </div>
     </div>
-  </div>
-  <!-- Sign up form modal -->
-  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Welcome to <b>Flower</b>plicity</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Show a second modal and hide this one with the button below. -->
-          <form>
-            <div class="row">
-              <div class="form col-md-6">
-                <input class="input" placeholder="Email address" required="" type="email">
-                <span class="input-border"></span>
-              </div>
-              <div class="form col-md-6">
-                <input class="input" placeholder="Password" required="" type="password">
-                <span class="input-border"></span>
-              </div>
-              <div class="row mt-4">
-                <div class="col d-flex justify-content-start">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckCheck" checked>
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Remember me
-                    </label>
+    <!-- Sign in form modal -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-success bg-opacity-50">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Welcome to <b>Flower</b>plicity</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body modalbg-sign">
+            <!-- Show a second modal and hide this one with the button below. -->
+            <form>
+              <div id="form-center" class="row">
+                <div class="form col-md-6 col-sm">
+                  <input class="input" placeholder="Email address" required="" type="email">
+                  <span class="input-border"></span>
+                </div>
+                <div class="form col-md-6 col-sm">
+                  <input id="passInput" class="input" placeholder="Password" required="" type="password">
+                  <span class="input-border"></span>
+                </div>
+                <div class="form-check col ms-2 mt-2">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultShowPass">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Show Password
+                  </label>
+                </div>
+                <div class="row mt-4">
+                  <div class="col d-flex justify-content-start">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckCheck" checked>
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                  <div id="forgot-txt" class="col">
+                    <!-- Simple link -->
+                    <a href="../forgotpassword.html">Forgot password?</a>
                   </div>
                 </div>
-                <div id="forgot-txt" class="col">
-                  <!-- Simple link -->
-                  <a href="#!">Forgot password?</a>
-                </div>
+              </div>
+              <div class="form-check col">
+                <input class="form-check-input" type="checkbox" value="s" id="flexCheckDefaultSigninChoice">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Check here if you have a floral business
+                </label>
+              </div>
+              <div>
+                <a id="signinUser" href="../user.html" class="btn-sm btn btn-success mt-2 ">SIGN IN</a>
+                <a id="signinOwner" href="../business-owner.html" class="btn-sm btn btn-success mt-2 ">Sign as Seller</a>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer d-flex justify-content-between">
+            <div class="row">
+              <div class="col">
+                <p id="sign-options">
+                  Sign in with:
+                  <a href="#"><i class="fab fa-facebook-f ps-2"></i></a>
+                  <a href="#"><i class="fab fa-google text-danger ps-2"></i></a>
+                  <a href="#"><i class="fab fa-twitter ps-2 text-primary"></i></a>
+                </p>
+              </div>
+              <div id="regQ-txt" class="col">
+                <small><p>Don't have an account? <a href="../register.html">Sign up</a></p></small>
               </div>
             </div>
-            <a href="pages/user.html" class="btn-sm btn btn-success mt-2 ">SIGN IN</a>
-          </form>
-        </div>
-        <div class="modal-footer justify-content-between">
-          <div class="row">
-            <div class="col">
-              <p id="sign-options" class="m-auto">
-                Sign in or sign up with:
-                <a href="#"><i class="fab fa-facebook-f ps-2"></i></a>
-                <a href="#"><i class="fab fa-google text-danger ps-2"></i></a>
-                <a href="#"><i class="fab fa-twitter ps-2 text-primary"></i></a>
-              </p>
-            </div>
-            <!-- <div id="regQ-txt" class="col">
-              <p>Are you a flower shop owner or a local flower grower?
-                <a href="#">Register Here</a>
-              </p>
+            <!-- <div  class="col">
             </div> -->
           </div>
         </div>
       </div>
     </div>
+    <!-- Chat with seller modal -->
+<div class="modal fade" id="chatSellerModal" tabindex="-1" aria-labelledby="chatSellerModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-success bg-opacity-75">
+        <h1 class="modal-title fs-5" id="chatSellerModalLabel">Serene Seeds Flower Shop</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingChatTextarea" autofocus></textarea>
+          <label for="floatingTextarea">Type a message...</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success"><i class="fa fa-paper-plane"></i></button>
+      </div>
+    </div>
   </div>
+</div>
   <main>
     <section class="container-lg my-5 py-5">
       <div class="container-lg container-md" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
@@ -158,37 +193,72 @@
             FEB-IBIG SALE
             <p class="text-white">30% OFF</p>
           </span>
-          <img id="magmaF-img" class="img-fluid" src="../../assets/images/bs6.jpg" alt="">
+          <img id="magmaF-img" class="img-fluid" src="../../assets/images/bs6.jpg" alt="red roses">
         </div>
         <div id="prod-infoMagma" class="col border bg-secondary bg-opacity-10">
           <h2 class="text-center fw-bold">Magmatic Red Rose</h2>
           <h2 class="text-center"><s class="text-muted">&#8369 2000.00</s> &#8369 1400.00</h2>
           <div class="row text-center">
             <div class="col text-muted">
-              <p>Product will be delivered approximatelty as pictured</p>
+              <label><small>Product will be delivered approximatelty as pictured</small></label>
             </div>
             <div class="col text-muted">
-              <p>Posted by:</p>
-              <p>Serene Seeds</p>
+              <label><small>Posted by:</small></label>
+              <p><a class="text-secondary text-decoration-none" href="../shops/serene-seeds.html">Serene Seeds Flower Shop</a> <a class="text-decoration-none text-dark" href="#"  data-bs-toggle="modal" data-bs-target="#chatSellerModal"><i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Chat with Seller" class="fas fa-comments"></i></a></p>
             </div>
           </div>
           <div class="row">
             <div class="col">
-              <p class="text-center text-muted">Store Pick-up is also available.</p>
+              <label class="form-label text-center text-muted">Choose Payment Options:</label>
+              <form>
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                  <option selected>Payment Method</option>
+                  <option value="1">Cash On Delivery</option>
+                  <option value="2">E-wallet (G-Cash, Paymaya, etc.)</option>
+                  <option value="3">Online Banking</option>
+                </select>
+              </form>
             </div>
-            <div class="col">
-              <p class="text-center text-muted"><i class="fas fa-truck"></i> Next Day Delivery</p>
+            <div id="del-date" class="col">
+              <label class="form-label text-muted">Choose your Preferred Delivery Date:</label>
+              <form>
+                <input class="form-control form-control-sm ms-auto"
+                type="date"
+                name="delivery"
+                min="2023-02-18"
+                max="2023-02-20"
+                required />
+                <span class="validity"></span>
+              </form>
+              <label class="text-muted mt-1"><small>Store Pick Up is also available</small></label>
             </div>
           </div>
           <div class="row text-center mt-lg-5">
-            <a class="btn-prodMagma" href="#">ADD TO CART</a>
-            <a class="btn-prodMagma" href="#">BUY NOW</a>
+            <a class="btn-prodMagma" href="#atb" id="btnatb">ADD TO BASKET</a>
+            <a class="btn-prodMagma" href="#placeorder" id="btnflower-magma">PLACE ORDER</a>
           </div>
         </div>
       </div>
     </section>
+    <!-- Add to basket -->
+    <div id="atbToast" class="toast toast-container" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          Successfully added to your basket!
+        </div>
+      </div>
+    </div>
+    <!--Place order toast -->
+    <div id="placeordertoast" class="toast toast-container" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          Your flower is now ready to be ship.
+        </div>
+      </div>
+    </div>
   </main>
-  <footer class="text-center text-lg-start bg-white text-muted mt-3">
+   <!-- Footer -->
+   <footer class="text-center text-lg-start bg-white text-muted mt-3">
     <!-- Section: Social media -->
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
       <!-- Left -->
@@ -196,7 +266,6 @@
         <span>Get connected with us on social networks:</span>
       </div>
       <!-- Left -->
-  
       <!-- Right -->
       <div>
         <a href="#" class="me-4 link-secondary text-decoration-none">
@@ -214,8 +283,7 @@
       </div>
       <!-- Right -->
     </section>
-    <!-- Section: Social media -->
-  
+    <!-- Section: Social media -->f
     <!-- Section: Links  -->
     <section class="">
       <div class="container text-center text-md-start mt-5">
@@ -227,15 +295,11 @@
             <h6 class="text-uppercase fw-bold mb-4">
               <i class="fas fa-sun me-3 text-secondary"></i><b>FLOWER</b>PLICITY
             </h6>
-            <p>
-              Sign up for our newsletter
-            </p>
-            <div class="input-group mb-3">
+            <div class="mb-3">
               <h6>SIMPLY. EASY. HASSLE FREE.</h6>
             </div>
           </div>
           <!-- Grid column -->
-  
           <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
@@ -246,23 +310,22 @@
               <a href="../../index.html" class="text-reset">Home</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Collections</a>
+              <a href="../flowers.html" class="text-reset">SHOP</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Blogs</a>
+              <a href="../blog.html" class="text-reset">Blogs</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Gift Ideas</a>
+              <a href="../about-us.html" class="text-reset">About Us</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">About Us</a>
+              <a href="../faq.html" class="text-reset">FAQ</a>
             </p>
             <p>
               <a href="../shops.html" class="text-reset">Shop Near Me</a>
             </p>
           </div>
           <!-- Grid column -->
-
           <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
@@ -281,7 +344,6 @@
       </div>
     </section>
     <!-- Section: Links  -->
-  
     <!-- Copyright -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
       <p>coded by Ariel Maniago & Rosie Conde</p>
@@ -295,7 +357,6 @@
     // Tooltips
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-  
   const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
   const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
   const popover = new bootstrap.Popover('.example-popover', {

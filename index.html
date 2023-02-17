@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="assets/styles/style.css">
   <link rel="icon" href="assets/images/flowerplicity-website-favicon-white.png" type="image/png" sizes="16x16">
   <title>Flowerplicity</title>
-  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
   <script src="assets/js/bootstrap.bundle.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
   <script src="./assets/custom-js/signin-choice.js"></script>
   <script src="./assets/custom-js/showPw-signin.js"></script>
 </head>
@@ -69,19 +69,15 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header bg-success bg-opacity-50">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Search</h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Search Shop</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="input-group mb-3">
-              <input type="text" class="form-control border-success border-opacity-25" placeholder="Search Flower" aria-label="Search" aria-describedby="button-addon2">
-              <a href="#" class="btn btn-outline-success" type="button" id="button-addon2"><i class="fas fa-search"></i></a>
+              <input type="text" class="form-control border-success border-opacity-25" placeholder="Search a floral shop or farm near you" aria-label="Search" aria-describedby="button-addon2">
+              <a href="./pages/shops/serene-seeds.html" class="btn btn-outline-success" type="button" id="button-addon2"><i class="fas fa-search"></i></a>
             </div>
           </div>
-          <!-- <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div> -->
         </div>
       </div>
     </div>
@@ -152,8 +148,6 @@
                 <small><p>Don't have an account? <a href="pages/register.html">Sign up</a></p></small>
               </div>
             </div>
-            <!-- <div  class="col">
-            </div> -->
           </div>
         </div>
       </div>
@@ -181,7 +175,7 @@
               <div class="overlay-image d-block"  style="background-image: url(assets/images/png-faq.png);"></div>
               <div id="carousel-container" class="container container-lg container-md container-sm text-center">
                 <h1>Know your concerns about our site</h1>
-                <a href="#" class="btn-carousel">
+                <a href="./pages/faq.html" class="btn-carousel">
                   FAQ
                 </a>
               </div>
@@ -190,7 +184,7 @@
               <div class="overlay-image d-block"  style="background-image: url(assets/images/freestocks-VFs2fZEVkXo-unsplash.jpg);"></div>
               <div id="carousel-container" class="container container-lg container-md container-sm text-center">
                 <h1>Read our latest related articles.</h1>
-                <a href="#" class="btn-carousel">
+                <a href="./pages/blog.html" class="btn-carousel">
                   LATEST BLOGS
                 </a>
               </div>
@@ -208,7 +202,7 @@
       <section class="container container-md container-sm mt-1 mt-md-1 mt-sm-1">
         <div id="welcome-row" class="row bg-light container-md p-3 m-auto">
           <div class="col col-md col-sm" id="div-welcomeImg">
-            <div id="welcome-image" class="img-fluid border-0" alt=""></div>
+            <div id="welcome-image" class="img-fluid border-0"></div>
           </div>
           <div class="welcome-text col col-md m-auto m-md-auto m-sm-auto">
             <h2 class="fs-1">Welcome to <strong>Flower</strong>plicity</h2>
@@ -223,7 +217,7 @@
               <a id="btnshop-nearby" href="./pages/faq.html" class="mt-lg-2">LEARN MORE</a>
           </div>
           <div class="col col-sm col-md" id="div-welcomeImg">
-            <div id="shop-nearbyImage" class="img-fluid" alt=""></div>
+            <div id="shop-nearbyImage" class="img-fluid"></div>
           </div>
         </div>
       </section>
@@ -233,17 +227,17 @@
         <div class="bs-row row row-cols-1 row-cols-md-3 row-cols-sm-1 row-cols-md-3 g-4">
           <div class="col column">
             <div class="card-hover card w-100 h-100">
-              <a href="pages/flowers/white-flower.html"><img id="bs-img1" class="card-img-top"></a>
+              <a href="pages/flowers/magmatic-red-flower.html"><img id="bs-img1" class="card-img-top"></a>
               <div class="card-body">
                 <div class="d-flex justify-content-between">
-                  <a href="pages/flowers/white-flower.html" class=" card-link link-dark text-link fw-bold">White Flower</a>
-                  <p class="card-text">&#8369 1000</p>
+                  <a href="pages/flowers/magmatic-red-flower.html" class=" card-link link-dark text-link fw-bold">Magmatic Red Rose</a>
+                  <p class="card-text">&#8369 1400</p>
                 </div>
                 <p class="card-text float-end"><s>&#8369 2000</s></p>
               </div>
               <div class="card-footer bs-footer">
                 <ul class="list-inline">
-                  <li class="float-lg-end list-inline-item"><small><i class="fas fa-store-alt"></i> Serene Seeds</small></li>
+                  <li class="float-lg-end list-inline-item"><small><i class="fas fa-store-alt"></i> <a href="./pages/shops/serene-seeds.html" class="text-decoration-none text-dark">Serene Seeds</a> </small></li>
                   <li class="list-inline-item">
                     <small><i class="fas fa-truck"></i> Same Day Delivery</small>
                   </li>
@@ -253,7 +247,7 @@
           </div>
           <div class="col column">
             <div class="card-hover card w-100 h-100">
-              <a href="#"><img id="bs-img2" class="card-img-top" alt=""></a>
+              <a href="#"><img id="bs-img2" class="card-img-top"></a>
               <div class="card-body">
                 <div class="d-flex justify-content-between">
                   <a href="#" class="card-link link-dark text-link fw-bold">Blue Sunny</a>
@@ -275,7 +269,7 @@
           </div>
           <div class="col column">
             <div class="card-hover card w-100 h-100">
-              <a href="#"><img id="bs-img3" class="card-img-top" alt=""></a>
+              <a href="#"><img id="bs-img3" class="card-img-top"></a>
               <div class="card-body">
                 <div class="d-flex justify-content-between">
                   <a href="#" class="card-link link-dark text-link fw-bold">Pink Rose</a>
@@ -295,7 +289,7 @@
           </div>
           <div class="col column">
             <div class="card-hover card w-100 h-100">
-              <a href="pages/flowers/pale-red-flower.html"><img id="bs-img4" class="card-img-top" alt=""></a>
+              <a href="pages/flowers/pale-red-flower.html"><img id="bs-img4" class="card-img-top"></a>
               <div class="card-body">
                 <div class="d-flex justify-content-between">
                   <a href="pages/flowers/pale-red-flower.html" class="card-link link-dark text-link fw-bold">Pale Red Flower</a>
@@ -315,7 +309,7 @@
           </div>
           <div class="col column">
             <div class="card-hover card w-100 h-100">
-              <a href="#"><img id="bs-img5" class="card-img-top" alt=""></a>
+              <a href="#"><img id="bs-img5" class="card-img-top"></a>
               <div class="card-body">
                 <div class="d-flex justify-content-between">
                   <a href="#" class="card-link link-dark text-link fw-bold">Lovely Red Flower</a>
@@ -335,7 +329,7 @@
           </div>
           <div class="col column">
             <div class="card-hover card w-100 h-100">
-              <a href="#"><img id="bs-img6" class="card-img-top" alt=""></a>
+              <a href="#"><img id="bs-img6" class="card-img-top"></a>
               <div class="card-body">
                 <div class="d-flex justify-content-between">
                   <a href="#" class="card-link link-dark text-link fw-bold">Assorted Flowers</a>
@@ -357,28 +351,28 @@
       </section>
     </main>
     <article class="container mt-5 m-auto gap-md-1">
-      <h1 class="fw-bold text-center ">FEATURED GIFT IDEAS</h1>
+      <h1 class="fw-bold text-center ">FEATURED ARTICLES</h1>
       <hr class="style-eight">
       <div class="row blog-row">
         <div class="col-sm-4 col-md-4 card-tablet">
           <figure class="figure">
-            <img src="assets/images/lina-verovaya-GQQ6BRJxysU-unsplash.jpg" class="figure-img img-fluid rounded" alt="...">
-            <figcaption class="figure-caption"><h4>Trendy backpacks for your trendy love ones just like you.</h4></figcaption>
-            <a href="#" class="text-black">See more</a>
+            <img src="assets/images/ra1.jpg" class="figure-img img-fluid rounded">
+            <figcaption class="figure-caption"><a class="text-decoration-none text-muted" href="./pages/blog.html"><h4>From bouquets to bath bombs, 1-800-Flowers has all the gifts you need for a perfect Valentine’s Day</h4></a> </figcaption>
+            <a href="./pages/blog.html" class="text-black">See here</a>
           </figure>
         </div>
         <div id="second-blog" class="col-sm-4 col-md-4 card-tablet">
           <figure class="figure">
-            <img src="assets/images/chocs.jpg" class="figure-img img-fluid rounded" alt="...">
-            <figcaption class="figure-caption"><h4>Spread the sweetness overload this valentine's season.</h4></figcaption>
-            <a href="#" class="text-black">See more</a>
+            <img src="assets/images/ra2.jpg" class="figure-img img-fluid rounded">
+            <figcaption class="figure-caption"><a class="text-decoration-none text-muted" href="./pages/blog.html"><h4>Spread the sweetness overload this valentine's season.</h4></a></figcaption>
+            <a href="./pages/blog.html" class="text-black">See here</a>
           </figure>
         </div>
         <div id="third-blog" class="col-sm-4 col-md-4 card-tablet">
           <figure class="figure">
-            <img src="assets/images/wines.jpg" class="figure-img img-fluid rounded" alt="...">
-            <figcaption class="figure-caption"><h4>Sounds. Like. Celebration</h4></figcaption>
-            <a href="#" class="text-black">See more</a>
+            <img src="assets/images/ra3.jpg" class="figure-img img-fluid rounded">
+            <figcaption class="figure-caption"><a class="text-decoration-none text-muted" href="./pages/blog.html"><h4>Sounds. Like. Celebration</h4></a></figcaption>
+            <a href="./pages/blog.html" class="text-black">See here</a>
           </figure>
         </div>
       </div>
@@ -392,7 +386,6 @@
       <span>Get connected with us on social networks:</span>
     </div>
     <!-- Left -->
-
     <!-- Right -->
     <div>
       <a href="#" class="me-4 link-secondary text-decoration-none">
@@ -410,8 +403,7 @@
     </div>
     <!-- Right -->
   </section>
-  <!-- Section: Social media -->
-
+  <!-- Section: Social media -->f
   <!-- Section: Links  -->
   <section class="">
     <div class="container text-center text-md-start mt-5">
@@ -428,7 +420,6 @@
           </div>
         </div>
         <!-- Grid column -->
-
         <!-- Grid column -->
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
@@ -439,19 +430,19 @@
             <a href="index.html" class="text-reset">Home</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Collections</a>
+            <a href="./pages/flowers.html" class="text-reset">SHOP</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Blogs</a>
+            <a href="./pages/blog.html" class="text-reset">Blogs</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Gift Ideas</a>
+            <a href="./pages/about-us.html" class="text-reset">About Us</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">About Us</a>
+            <a href="./pages/faq.html" class="text-reset">FAQ</a>
           </p>
           <p>
-            <a href="pages/shops.html" class="text-reset">Shop Near Me</a>
+            <a href="./pages/shops.html" class="text-reset">Shop Near Me</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -474,7 +465,6 @@
     </div>
   </section>
   <!-- Section: Links  -->
-
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
     <p>coded by Ariel Maniago & Rosie Conde</p>

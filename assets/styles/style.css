@@ -1,6 +1,5 @@
 @import url(../styles/css-import.css);
 *{
-  /* outline: dotted 1px; */
   font-family: 'Poppins', sans-serif;
 }
 body{
@@ -12,31 +11,25 @@ body{
 nav{
   background-color: #79C0AD;
 }
+textarea{
+  resize: none;
+}
 #btn-signup{
   border: 2px solid #353b40;
   color:#353b40;
   padding: 7px 10px;
-  /* border-radius: 5px; */
   margin: 10px auto;
- /* border-width: 2px; */
- /* background-color: #111; */
  text-decoration: none;
- /* border-style: dashed; */
  transition: .3s;
 }
 #btn-signup:hover{
   color:#F8F9FB;
   border: 2px solid #353b40;
- /* border-width: 2px; */
- /* border-style: dashed; */
  background-color: #353b40;
 }
 .navMenuLink {
   font-size: 13px;
   color: #111;
-/*   font-family: inherit; */
-/*   font-weight: 800; */
-/*   cursor: pointer; */
   position: relative;
   border: none;
   background: none;
@@ -145,12 +138,11 @@ nav{
   border: 2px solid #353b40;
 }
 #bs-img1{
-  background-image: url('../images/bs1.jpg');
+  background-image: url('../images/bs6.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 300px;
-  /* width: 450px; */
 }
 #bs-img2{
   background-image: url('../images/bs2.jpg');
@@ -158,7 +150,6 @@ nav{
   background-position: center;
   background-repeat: no-repeat;
   height: 300px;
-  /* width: 415px; */
 }
 #bs-img3{
   background-image: url('../images/cs3.jpg');
@@ -166,7 +157,6 @@ nav{
   background-position: center;
   background-repeat: no-repeat;
   height: 300px;
-  /* width: 415px; */
 }
 #bs-img4{
   background-image: url('../images/bs4.jpg');
@@ -174,7 +164,6 @@ nav{
   background-position: center;
   background-repeat: no-repeat;
   height: 300px;
-  /* width: 415px; */
 }
 #bs-img5{
   background-image: url('../images/cs4.jpg');
@@ -182,7 +171,6 @@ nav{
   background-position: center;
   background-repeat: no-repeat;
   height: 300px;
-  /* width: 450px; */
 }
 #bs-img6{
   background-image: url('../images/cs2.jpg');
@@ -190,7 +178,6 @@ nav{
   background-position: center;
   background-repeat: no-repeat;
   height: 300px;
-  /* width: 450px; */
 }
 .card-hover{
   transition: 0.3s;
@@ -315,9 +302,3 @@ hr.style-eight:after {
 #regQ-txt a{
   text-decoration: none;
  }
-/* #shopName-txt{
- width: 200px;
-}
-#shopName-txt:focus ~ .input-border{
- width: 100%;
-} */

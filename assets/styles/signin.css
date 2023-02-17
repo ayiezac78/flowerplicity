@@ -1,0 +1,7 @@
+#sign-img{
+  background-image: url('../images/signin.svg');
+  background-repeat:no-repeat;
+  background-size: contain;
+  height:425px;
+  width:auto;
+}

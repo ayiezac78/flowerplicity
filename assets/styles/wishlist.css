@@ -1,19 +1,16 @@
-.td-img{
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 150px;
-  width: 180px;
-}
 .btn-addtocart{
-  padding: 5px 4px;
-  border: 1px solid #111;
   transition: .5s;
   color: #111;
 }
 .btn-addtocart:hover{
   color: #FF7852;
-  border: 1px solid #FF7852;
+}
+#basketWToast{
+  width: auto;
+}
+#deletedToast{
+  width: auto;
+  background-color: #FF7852;
 }
 .basket-icon{
   display: none;
